@@ -1,0 +1,7 @@
+:root {
+    --primary:#ffff;
+    --secondary: black;
+}
+.navbar-container{
+     background-color:var(--secondary)
+}
