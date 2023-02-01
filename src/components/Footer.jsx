@@ -13,7 +13,7 @@ const Footer = () => {
           </h4>
         </div>
         <div className="footer-copyright">
-          <h4>Copyright &copy;{getYear()} TM</h4>
+          <h4>Copyright &copy;2017 - {getYear()} TM</h4>
         </div>
         <div className="footer-socials">
           <Socials />
