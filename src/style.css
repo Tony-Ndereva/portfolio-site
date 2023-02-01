@@ -1,7 +1,32 @@
 :root {
-    --primary:#ffff;
-    --secondary: black;
+  --primary: #ffff;
+  --secondary: black;
 }
-.navbar-container{
-     background-color:var(--secondary)
+* {
+  font-family: "Shadows Into Light", cursive;
+}
+body {
+  margin: 0;
+}
+.navbar {
+}
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20rem;
+}
+.nav-item {
+  padding: 1.5rem;
+}
+.nav-item a {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: var(--secondary);
 }
