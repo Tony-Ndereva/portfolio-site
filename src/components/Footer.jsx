@@ -1,3 +1,4 @@
+import Socials from "./Socials";
 const Footer = () => {
   function getYear() {
     return new Date().getFullYear();
@@ -15,8 +16,7 @@ const Footer = () => {
           <h4>Copyright &copy;{getYear()} TM</h4>
         </div>
         <div className="footer-socials">
-
-            
+          <Socials />
         </div>
       </div>
     </div>
