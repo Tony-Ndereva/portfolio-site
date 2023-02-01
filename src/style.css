@@ -134,3 +134,8 @@ a:visited {
   padding:1.4rem;
   font-size: 1.5rem;
 }
+.footer {
+  background-color: #0a0416;
+  font-size: 1.1rem;
+  padding:1.1rem
+}
