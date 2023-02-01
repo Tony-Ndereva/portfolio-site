@@ -69,8 +69,16 @@ a:visited {
   }
 }
 .left h2 {
-    font-size: 4.2rem;
+  font-size: 4.2rem;
 }
 .name {
-    color :purple;
+  color: purple;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+iframe{
+    font-size: 15rem;
 }

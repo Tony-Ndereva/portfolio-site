@@ -1,5 +1,10 @@
 import Typewriter from "typewriter-effect";
+import coding from "../assets/coding.json";
+import Lottie from "lottie-react";
 const Home = () => {
+  const View = () => {
+    return <Lottie animationData={coding} />;
+  };
   return (
     <section className="home">
       <div className="row">
@@ -15,14 +20,20 @@ const Home = () => {
           <h2>
             <Typewriter
               options={{
-                strings: ["Web and Mobile App Developer", "Student", "IT Technician"],
+                strings: [
+                  "Web and Mobile App Developer",
+                  "life-time Student",
+                  "IT Technician",
+                ],
                 autoStart: true,
                 loop: true,
               }}
             />
           </h2>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <View />
+        </div>
       </div>
     </section>
   );

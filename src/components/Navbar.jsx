@@ -4,19 +4,19 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="nav-item">
           <a href="" className="Nav-link">
-            <i class="fa-solid fa-house"></i>
+            <i className="fa-solid fa-house"></i>
             Home
           </a>
         </div>
         <div className="nav-item">
           <a href="" className="Nav-link">
-            <i class="fa-solid fa-user"></i>
+            <i className="fa-solid fa-user"></i>
             About
           </a>
         </div>
         <div className="nav-item">
           <a href="" className="Nav-link">
-            <i class="fa-solid fa-bars-progress"></i>
+            <i className="fa-solid fa-bars-progress"></i>
             Projects
           </a>
         </div>
