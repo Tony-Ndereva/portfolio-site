@@ -1,6 +1,22 @@
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const [navBar, setNavBar] = useState(false);
+  function changeBackground() {
+    if (window.scrollY >= 66) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  }
+
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+    console.log('success')
+  },[]);
   return (
-    <section className="navbar">
+    <section className={`navbar ${navBar ? "true" : ""}`}>
       <div className="nav-container">
         <div className="nav-item">
           <a href="" className="Nav-link">

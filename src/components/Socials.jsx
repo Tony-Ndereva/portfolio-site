@@ -26,7 +26,7 @@ const Socials = () => {
         <i className="fa-brands fa-twitter"></i>
       </a>
       <a href="mailto:tonymaluki@gmail.com">
-        <i class="fa-solid fa-envelope"></i>
+        <i className="fa-solid fa-envelope"></i>
       </a>
     </div>
   );

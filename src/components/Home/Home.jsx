@@ -26,9 +26,9 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Web Developer.",
-                    "life-time Student.",
-                    "IT Technician.",
+                    " <> Web Developer.< />",
+                    "<> life-time Student.< />",
+                    "<> IT Technician.< />",
                   ],
                   autoStart: true,
                   loop: true,

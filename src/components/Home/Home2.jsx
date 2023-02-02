@@ -1,5 +1,7 @@
 import avatar from "../../assets/avatar.svg";
+
 const Home2 = () => {
+  
   return (
     <section className="about">
       <div className="left">
@@ -24,6 +26,7 @@ const Home2 = () => {
         </span>
       </div>
       <img src={avatar} className="avatar" alt="" />
+    
       <div className="clearfix"></div>
     </section>
   );
