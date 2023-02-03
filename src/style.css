@@ -162,7 +162,11 @@ a:visited {
 .scrolled{
   background-color: #212038d8;
   /* background-color: transparent; */
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.footer-copyright h4 {
+  font-family: 'Courier New', Courier, monospace;
 }
