@@ -11,12 +11,11 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    changeBackground();
     window.addEventListener("scroll", changeBackground);
-    console.log('success')
-  },[]);
+    console.log("success");
+  }, []);
   return (
-    <section className={`navbar ${navBar ? "true" : ""}`}>
+    <section className={`navbar ${navBar ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-item">
           <a href="" className="Nav-link">
