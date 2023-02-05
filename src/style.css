@@ -171,6 +171,28 @@ a:visited {
   transition: background-color 500ms linear;
 }
 
-.footer-copyright h4 {
+.footer-copyright h4, .project-card  h3,p {
   font-family: "Courier New", Courier, monospace;
+}
+
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  text-align: center;
+  padding:2rem;
+}
+.project-image {
+  width:100%;
 }
