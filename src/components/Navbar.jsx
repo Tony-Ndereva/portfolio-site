@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-
+import TestFunction from "./Test";
+// import { createRoot } from "react-dom";
+// import { createBrowserRouter, RouterProvider, Route, link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navBar, setNavBar] = useState(false);
   function changeBackground() {
@@ -18,10 +21,10 @@ const Navbar = () => {
     <section className={`navbar ${navBar ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-item">
-          <a href="" className="Nav-link">
+          <Link to='/Test' className="Nav-link">
             <i className="fa-solid fa-house"></i>
             Home
-          </a>
+          </Link>
         </div>
         <div className="nav-item">
           <a href="" className="Nav-link">
@@ -30,10 +33,10 @@ const Navbar = () => {
           </a>
         </div>
         <div className="nav-item">
-          <a href="/projects" className="Nav-link">
+          <Link to="/Projects" className="Nav-link">
             <i className="fa-solid fa-bars-progress"></i>
             Projects
-          </a>
+          </Link>
         </div>
       </div>
     </section>
