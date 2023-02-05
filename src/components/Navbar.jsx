@@ -30,7 +30,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="nav-item">
-          <a href="" className="Nav-link">
+          <a href="/projects" className="Nav-link">
             <i className="fa-solid fa-bars-progress"></i>
             Projects
           </a>
