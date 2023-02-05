@@ -1,5 +1,5 @@
 import Socials from "./Socials";
-const Footer = () => {
+const Footer = (props) => {
   function getYear() {
     return new Date().getFullYear();
   }
@@ -9,7 +9,9 @@ const Footer = () => {
         <div className="footer-copyright">
           <h4>
             Designed and developed by{" "}
-            <span className="orange">Tony Ndereva Maluki</span>
+            <span className="orange">
+              Tony Ndereva Maluki
+            </span>
           </h4>
         </div>
         <div className="footer-copyright">
