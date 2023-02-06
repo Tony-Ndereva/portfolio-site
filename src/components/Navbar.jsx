@@ -21,7 +21,7 @@ const Navbar = () => {
     <section className={`navbar ${navBar ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-item">
-          <Link to='/Test' className="Nav-link">
+          <Link to='/' className="Nav-link">
             <i className="fa-solid fa-house"></i>
             Home
           </Link>
