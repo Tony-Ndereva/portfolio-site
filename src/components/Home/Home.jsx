@@ -10,9 +10,7 @@ const Home = () => {
   };
   return (
     <>
-     
       <section className="home">
-     
         <div className="row">
           <div className="left">
             <h2 className="heading">
@@ -20,7 +18,7 @@ const Home = () => {
               <span className="wave">👋</span>
             </h2>
             <h2 className="heading-name">
-              I am  {" "} <span className="name">Tony Ndereva Maluki</span>
+              I am <span className="name">Tony Ndereva Maluki</span>
             </h2>
 
             <TypeWriter />
