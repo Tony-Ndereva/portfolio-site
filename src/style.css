@@ -109,6 +109,8 @@ a:visited {
 .about-header h2 {
   text-align: center;
   width: 40%;
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
 }
 .description {
   width: 50%;
@@ -219,4 +221,26 @@ h3 {
   background-color: orange;
   border-radius: 1.1rem;
   font-family: var(--secondary-font);
+}
+.skill-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+.skill-description {
+  width: 100%;
+  font-size: 1.8rem;
+  display: block;
+}
+.left-skill-wrapper {
+  width:50%;
+}
+
+.skill-header {
+  text-align: center;
+  
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
 }
