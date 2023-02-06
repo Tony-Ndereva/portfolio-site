@@ -1,26 +1,23 @@
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import TestFunction from "./components/Test";
+import About from "./components/About";
 import Projects from "./components/Projects";
 import { Routes, Route } from "react-router-dom";
 import resumeData from "./resumeData";
+import Particle from "./components/Particle";
 const App = () => {
   const projects = resumeData.map((each) => {
-    return (
-      <Projects
-       {...each.projects}
-       key={each.projects.id}
-      />
-    );
+    return <Projects {...each.projects} key={each.projects.id} />;
   });
 
   return (
     <>
+    <Particle />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        
+
         <Route
           path="/Projects"
           element={
@@ -36,6 +33,7 @@ const App = () => {
             </section>
           }
         ></Route>
+        <Route path="/About" element={<About />}></Route>
       </Routes>
       <Footer />
     </>

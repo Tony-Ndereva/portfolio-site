@@ -27,10 +27,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="nav-item">
-          <a href="" className="Nav-link">
+          <Link to='/About' className="Nav-link">
             <i className="fa-solid fa-user"></i>
             About
-          </a>
+          </Link>
         </div>
         <div className="nav-item">
           <Link to="/Projects" className="Nav-link">
