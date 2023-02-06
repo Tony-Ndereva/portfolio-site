@@ -9,10 +9,8 @@ const App = () => {
   const projects = resumeData.map((each) => {
     return (
       <Projects
-        projectImage={each.projects.projectImage}
-        projectName={each.projects.projectName}
-        projectDescription={each.projects.projectDescription}
-        key={each.projects.id}
+       {...each.projects}
+       key={each.projects.id}
       />
     );
   });
@@ -22,11 +20,18 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/Test" element={<TestFunction />}></Route>
+        
         <Route
           path="/Projects"
           element={
             <section className="project-section">
+              <div className="project-intro">
+                <h1>
+                  My Recent <span className="orange">Works</span>
+                </h1>
+                <h3>Here are afew projects I've worked on recently.</h3>
+              </div>
+
               <div className="project-container">{projects}</div>
             </section>
           }
