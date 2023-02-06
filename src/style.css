@@ -1,10 +1,12 @@
 :root {
   --primary: #ffff;
   --secondary: black;
+  --primary-font: "Shadows Into Light", cursive;
+  --secondary-font: "Courier New", Courier, monospace;
 }
 * {
   color: var(--primary);
-  font-family: "Shadows Into Light", cursive;
+  font-family: var(--primary-font);
   margin: 0;
   box-sizing: border-box;
 }
@@ -171,18 +173,20 @@ a:visited {
   transition: background-color 500ms linear;
 }
 
-.footer-copyright h4, .project-card  h3,p {
-  font-family: "Courier New", Courier, monospace;
+.footer-copyright h4,
+.project-card h3,
+p {
+  font-family: var(--secondary-font);
 }
 
 .project-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  margin: 3.5rem;
 }
 .project-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .project-card {
   display: flex;
@@ -191,8 +195,28 @@ a:visited {
   justify-content: center;
   width: 30%;
   text-align: center;
-  padding:2rem;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: 1px solid #aaa8ad;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  margin: 1.1rem;
+}
+.project-title {
+  padding: 1rem;
 }
 .project-image {
-  width:100%;
+  width: 100%;
+  border-radius: 1.1rem;
+}
+.project-intro h1,
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.project-link {
+  padding: 0.9rem;
+  margin-top: 1rem;
+  background-color: orange;
+  border-radius: 1.1rem;
+  font-family: var(--secondary-font);
 }
