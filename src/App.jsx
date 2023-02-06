@@ -1,7 +1,7 @@
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { Routes, Route } from "react-router-dom";
 import resumeData from "./resumeData";
@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-    <Particle />
+      <Particle />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -33,7 +33,7 @@ const App = () => {
             </section>
           }
         ></Route>
-        <Route path="/About" element={<About />}></Route>
+        <Route path="/Skills" element={<Skills />}></Route>
       </Routes>
       <Footer />
     </>
