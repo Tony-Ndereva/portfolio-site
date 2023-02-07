@@ -272,16 +272,27 @@ h3 {
 .icons-container {
   display: flex;
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
   flex-wrap: wrap;
-  
 }
 .tech-icon {
   width: 15%;
-  border: 1px solid #ffff;
+  border: 1.7px solid rgba(200, 137, 230, 0.637);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:0.9rem;
-  margin:3rem;
+  padding: 0.9rem;
+  margin: 3rem;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  transition: all 0.4s ease 0s;
+  /* opacity:0.93 */
+}
+
+.tech-icon:hover {
+  transform: scale(1.05);
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883);
+}
+.react-icons {
+  font-size: 10rem;
 }
