@@ -1,6 +1,8 @@
 import Lottie from "lottie-react";
 import skills from "../assets/skills.json";
-import { DiNodejs } from "react-icons/di";
+import { DiHtml5,DiNodejs,DiCss3,DiReact,DiJavascript1,DiMongodb, DiPython } from "react-icons/di";
+import {SiMysql} from 'react-icons/si'
+import { IconContext } from "react-icons";
 const Skills = () => {
   const View = () => {
     return <Lottie animationData={skills} />;
@@ -39,19 +41,28 @@ const Skills = () => {
 
         <div className="icons-container">
           <div className="tech-icon">
-            <DiNodejs size='10rem' />
+            <DiHtml5 className="react-icons" />
           </div>
           <div className="tech-icon">
-            <DiNodejs size='10rem' />
+            <DiCss3 className="react-icons" />
           </div>
           <div className="tech-icon">
-            <DiNodejs size='10rem' />
+            <DiJavascript1 className="react-icons" />
           </div>
           <div className="tech-icon">
-            <DiNodejs size='10rem' />
+            <DiNodejs className="react-icons" />
           </div>
           <div className="tech-icon">
-            <DiNodejs size='10rem' />
+            <DiReact className="react-icons" />
+          </div>
+          <div className="tech-icon">
+            <DiMongodb className="react-icons" />
+          </div>
+          <div className="tech-icon">
+            <SiMysql className="react-icons" />
+          </div>
+          <div className="tech-icon">
+            <DiPython className="react-icons" />
           </div>
         </div>
       </div>
