@@ -202,7 +202,14 @@ p {
   border: 1px solid #aaa8ad;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
   margin: 1.1rem;
+  transition: all 0.5s ease 0s;
 }
+.project-card:hover{
+  transform: scale(1.02);
+  overflow: hidden ;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+}
+
 .project-title {
   padding: 1rem;
 }
@@ -268,6 +275,8 @@ h3 {
 }
 .lower-container h1 {
   text-align: center;
+  font-size:3rem;
+  margin-top:2rem;
 }
 .icons-container {
   display: flex;
