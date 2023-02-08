@@ -1,7 +1,8 @@
 import Lottie from "lottie-react";
 import skills from "../assets/skills.json";
-import { DiHtml5,DiNodejs,DiCss3,DiReact,DiJavascript1,DiMongodb, DiPython } from "react-icons/di";
+import { DiHtml5,DiNodejs,DiCss3,DiReact,DiJavascript1,DiMongodb, DiPython,DiWindows, DiLinux } from "react-icons/di";
 import {SiMysql} from 'react-icons/si'
+import {FaGit} from 'react-icons/fa'
 import { IconContext } from "react-icons";
 const Skills = () => {
   const View = () => {
@@ -63,6 +64,15 @@ const Skills = () => {
           </div>
           <div className="tech-icon">
             <DiPython className="react-icons" />
+          </div>
+          <div className="tech-icon">
+            <DiWindows className="react-icons" />
+          </div>
+          <div className="tech-icon">
+            <DiLinux className="react-icons" />
+          </div>
+          <div className="tech-icon">
+            <FaGit className="react-icons" />
           </div>
         </div>
       </div>
