@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import TestFunction from "./Test";
+import CV from "../assets/tonyCV.pdf";
 // import { createRoot } from "react-dom";
 // import { createBrowserRouter, RouterProvider, Route, link} from 'react-router-dom'
 import { Link } from "react-router-dom";
@@ -21,14 +21,14 @@ const Navbar = () => {
     <section className={`navbar ${navBar ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-item">
-          <Link to='/' className="Nav-link">
+          <Link to="/" className="Nav-link">
             <i className="fa-solid fa-house"></i>
             Home
           </Link>
         </div>
         <div className="nav-item">
-          <Link to='/Skills' className="Nav-link">
-          <i className="fa-solid fa-screwdriver-wrench"></i>
+          <Link to="/Skills" className="Nav-link">
+            <i className="fa-solid fa-screwdriver-wrench"></i>
             Skills
           </Link>
         </div>
@@ -37,6 +37,12 @@ const Navbar = () => {
             <i className="fa-solid fa-bars-progress"></i>
             Projects
           </Link>
+        </div>
+        <div className="nav-item">
+          <a href={CV} className="Nav-link" download>
+            <i className="fa-regular fa-file"></i>
+            Resume
+          </a>
         </div>
       </div>
     </section>
