@@ -220,7 +220,7 @@ p {
 .project-intro h1,
 h3 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .project-link {
   padding: 0.9rem;
@@ -304,4 +304,12 @@ h3 {
 }
 .react-icons {
   font-size: 10rem;
+}
+
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* insert styles here */
+
+  .nav-container{
+    width:100%;
+  }
 }
