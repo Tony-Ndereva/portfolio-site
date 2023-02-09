@@ -4,11 +4,7 @@ const TypeWriter = () => {
     <h2 className="typewriter">
       <Typewriter
         options={{
-          strings: [
-            " < > Web Developer.< />",
-            "< > life-time Student.< />",
-            "< > IT Technician.< />",
-          ],
+          strings: ["Web Developer.", "life-time Student.", "IT Technician."],
           autoStart: true,
           loop: true,
         }}
