@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
 import CV from "../assets/tonyCV.pdf";
-// import { createRoot } from "react-dom";
-// import { createBrowserRouter, RouterProvider, Route, link} from 'react-router-dom'
+
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navBar, setNavBar] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  function handleToggle() {
+    setToggle(!toggle);
+  }
   function changeBackground() {
     if (window.scrollY >= 66) {
       setNavBar(true);
@@ -15,7 +19,6 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
-    console.log("success");
   }, []);
   return (
     <section className={`navbar ${navBar ? "scrolled" : ""}`}>
@@ -43,6 +46,13 @@ const Navbar = () => {
             <i className="fa-regular fa-file"></i>
             Resume
           </a>
+        </div>
+        <div id="nav-mobile">
+          {toggle === false ? (
+            <FaBars onClick={handleToggle} className="react-icons-nav" />
+          ) : (
+            <FaTimes onClick={handleToggle} className="react-icons-nav" />
+          )}
         </div>
       </div>
     </section>
