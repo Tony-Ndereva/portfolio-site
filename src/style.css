@@ -1,7 +1,8 @@
 :root {
   --primary: #ffff;
   --secondary: black;
-  --primary-font: "Shadows Into Light", cursive;
+  /* --primary-font: "Shadows Into Light", cursive; */
+  --primary-font: font-family: 'Itim', cursive;
   --secondary-font: "Courier New", Courier, monospace;
 }
 * {
@@ -27,6 +28,8 @@ body {
 .nav-container {
   display: flex;
   justify-content: flex-end;
+  margin-right: 1.5rem;
+  align-items: center;
   /* margin-right: 20rem; */
 }
 .nav-item {
@@ -204,9 +207,9 @@ p {
   margin: 1.1rem;
   transition: all 0.5s ease 0s;
 }
-.project-card:hover{
+.project-card:hover {
   transform: scale(1.02);
-  overflow: hidden ;
+  overflow: hidden;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
 }
 
@@ -275,8 +278,8 @@ h3 {
 }
 .lower-container h1 {
   text-align: center;
-  font-size:3rem;
-  margin-top:2rem;
+  font-size: 3rem;
+  margin-top: 2rem;
 }
 .icons-container {
   display: flex;
@@ -309,7 +312,13 @@ h3 {
 @media only screen and (min-width: 320px) and (orientation: portrait) {
   /* insert styles here */
 
-  .nav-container{
-    width:100%;
+  .nav-container {
+    width: 100%;
   }
+}
+
+
+.react-icons-nav {
+  font-size:1.9rem;
+  transition: 500ms;
 }
