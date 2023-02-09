@@ -1,4 +1,3 @@
-import Particle from "./Particle";
 const Projects = (props) => {
   return (
     <>
