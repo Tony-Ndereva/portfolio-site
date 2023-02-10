@@ -6,8 +6,16 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navBar, setNavBar] = useState(false);
   const [toggle, setToggle] = useState(false);
+
   function handleToggle() {
     setToggle(!toggle);
+  }
+  function handleNavbar() {
+    if (toggle === false) {
+      return "none";
+    } else {
+      ("");
+    }
   }
   function changeBackground() {
     if (window.scrollY >= 66) {
@@ -24,35 +32,35 @@ const Navbar = () => {
     <section className={`navbar ${navBar ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-item">
+          {toggle === false ? (
+            <FaBars onClick={handleToggle} className="nav-toggler" />
+          ) : (
+            <FaTimes onClick={handleToggle} className="nav-toggler" />
+          )}
+        </div>
+        <div className={`nav-item ${handleNavbar()}`}>
           <Link to="/" className="Nav-link">
             <i className="fa-solid fa-house"></i>
             Home
           </Link>
         </div>
-        <div className="nav-item">
+        <div className={`nav-item ${handleNavbar()}`}>
           <Link to="/Skills" className="Nav-link">
             <i className="fa-solid fa-screwdriver-wrench"></i>
             Skills
           </Link>
         </div>
-        <div className="nav-item">
+        <div className={`nav-item ${handleNavbar()}`}>
           <Link to="/Projects" className="Nav-link">
             <i className="fa-solid fa-bars-progress"></i>
             Projects
           </Link>
         </div>
-        <div className="nav-item">
+        <div className={`nav-item ${handleNavbar()}`}>
           <a href={CV} className="Nav-link" download>
             <i className="fa-regular fa-file"></i>
             Resume
           </a>
-        </div>
-        <div id="nav-mobile">
-          {toggle === false ? (
-            <FaBars onClick={handleToggle} className="react-icons-nav" />
-          ) : (
-            <FaTimes onClick={handleToggle} className="react-icons-nav" />
-          )}
         </div>
       </div>
     </section>
