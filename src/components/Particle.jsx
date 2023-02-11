@@ -1,3 +1,4 @@
+import { random } from "nanoid";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -15,7 +16,7 @@ const Particle = () => {
             value: "#fff",
           },
           number: {
-            value: 100,
+            value: 80,
           },
           opacity: {
             value: { min: 0.3, max: 0.4 },
@@ -27,10 +28,10 @@ const Particle = () => {
             value: { min: 1, max: 5 },
           },
           move: {
-            direction: "bottom-right",
+            direction:random,
             enable: true,
-            speed: { min: 1, max: 2 },
-            straight: true,
+            speed: { min: 0.01, max: 0.5 },
+            straight: false,
           },
         },
       }}
