@@ -7,16 +7,17 @@ import { Routes, Route } from "react-router-dom";
 import resumeData from "./resumeData";
 import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
+
 const App = () => {
   const projects = resumeData.map((each) => {
     return <Projects {...each.projects} key={each.projects.id} />;
   });
-  const footer = Tonydetails.map((each)=>{
-    return <Footer {...each.details} key={each.details.id}/>
-  })
-  const home = Tonydetails.map((each)=>{
-    return <Home {...each.details} key={each.details.id}/>
-  })
+  const footer = Tonydetails.map((each) => {
+    return <Footer {...each.details} key={each.details.id} />;
+  });
+  const home = Tonydetails.map((each) => {
+    return <Home {...each.details} key={each.details.id} />;
+  });
 
   return (
     <>
