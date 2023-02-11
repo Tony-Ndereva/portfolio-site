@@ -4,7 +4,7 @@ const Home2 = () => {
   
   return (
     <section className="about">
-      <div className="left">
+     
         <div className="about-header">
           <h2>
             LET ME <span className="orange">INTRODUCE</span> MYSELF
@@ -24,7 +24,7 @@ const Home2 = () => {
           to designing and developing fast ,secure backend API and Database
           services, according to your defined business needs.
         </span>
-      </div>
+      
       <img src={avatar} className="avatar" alt="" />
     
       <div className="clearfix"></div>
