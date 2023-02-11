@@ -363,6 +363,9 @@ h3 {
     align-items: center;
     justify-content: center;
   }
+  .right {
+    margin-top:4.5rem
+  }
   .about-header h2 {
     width: 100%;
     font-size: 1.9rem;
@@ -375,7 +378,7 @@ h3 {
   }
   .avatar {
     float: none;
-    margin: 0;
+    margin: 2rem 0
   }
   .footer-socials {
     display: none;
