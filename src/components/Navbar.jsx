@@ -17,6 +17,9 @@ const Navbar = () => {
       ("");
     }
   }
+  function handleNavClick() {
+    setToggle(false);
+  }
   function changeBackground() {
     if (window.scrollY >= 66) {
       setNavBar(true);
@@ -38,25 +41,25 @@ const Navbar = () => {
             <FaTimes onClick={handleToggle} className="nav-toggler" />
           )}
         </div>
-        <div className={`nav-item ${handleNavbar()}`}>
+        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
           <Link to="/" className="Nav-link">
             <i className="fa-solid fa-house"></i>
             Home
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbar()}`}>
+        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
           <Link to="/Skills" className="Nav-link">
             <i className="fa-solid fa-screwdriver-wrench"></i>
             Skills
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbar()}`}>
+        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
           <Link to="/Projects" className="Nav-link">
             <i className="fa-solid fa-bars-progress"></i>
             Projects
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbar()}`}>
+        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
           <a href={CV} className="Nav-link" download>
             <i className="fa-regular fa-file"></i>
             Resume
