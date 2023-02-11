@@ -2,7 +2,7 @@
   --primary: #ffff;
   --secondary: black;
   /* --primary-font: "Shadows Into Light", cursive; */
-  --primary-font: font-family: 'Itim', cursive;
+  --primary-font: "Itim", cursive;
   --secondary-font: "Courier New", Courier, monospace;
 }
 * {
@@ -19,8 +19,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 2222;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  /* -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); */
   -webkit-transition: background-color 650ms linear;
   -ms-transition: background-color 650ms linear;
   transition: background-color 650ms linear;
@@ -176,6 +176,8 @@ a:visited {
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .footer-copyright h4,
@@ -309,16 +311,79 @@ h3 {
   font-size: 10rem;
 }
 
-@media only screen and (min-width: 320px) and (orientation: portrait) {
-  /* insert styles here */
+.nav-toggler {
+  font-size: 1.9rem;
 
-  .nav-container {
-    width: 100%;
-  }
+  display: none;
 }
 
+/* Media queries start here */
 
-.react-icons-nav {
-  font-size:1.9rem;
-  transition: 500ms;
+@media only screen and (max-width: 780px) {
+  .nav-toggler {
+    display: block;
+  }
+
+  .navbar {
+    width: 100%;
+    z-index: 11;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(24, 26, 39);
+    width: 100%;
+    transition: 500ms;
+  }
+  .none {
+    display: none;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    margin-top: 2rem;
+  }
+  .heading,
+  .heading-name,
+  .typewriter {
+    font-size: 2.2rem;
+    width: 100%;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-header h2 {
+    width: 100%;
+    font-size: 1.9rem;
+  }
+  .description {
+    width: 100%;
+    float: none;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+  .avatar {
+    float: none;
+    margin: 0;
+  }
+  .footer-socials {
+    display: none;
+  }
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
 }
