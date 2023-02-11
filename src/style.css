@@ -19,6 +19,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 2222;
+  /* background-color: red; */
   /* -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px); */
   -webkit-transition: background-color 650ms linear;
@@ -168,6 +169,7 @@ a:visited {
 }
 .home {
   padding: 3rem;
+  background-color: rgb(10, 4, 22);
 }
 
 .scrolled {
@@ -238,6 +240,9 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(10, 4, 22);
+  padding:7rem 0
+  
 }
 .skill-description {
   width: 100%;
@@ -246,6 +251,7 @@ h3 {
 }
 .left-skill-wrapper {
   width: 50%;
+  margin-left:1rem;
 }
 
 .skill-header {
@@ -317,7 +323,7 @@ h3 {
   display: none;
 }
 .skill-wrapper {
-  padding: 1rem;
+  /* padding: 1rem 0; */
 }
 
 /* Media queries start here */
@@ -351,7 +357,7 @@ h3 {
     align-items: center;
   }
   .left {
-    margin-top: 2rem;
+    padding:4rem 0;
   }
   .heading,
   .heading-name,
@@ -377,7 +383,7 @@ h3 {
   .description {
     width: 100%;
     float: none;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-top: 1.5rem;
   }
   .avatar {
@@ -394,14 +400,19 @@ h3 {
     justify-content: center;
   }
   .skill-wrapper {
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
   }
+  .skill-description {
+    font-size: 1.2rem;
+  }
+
   .upper-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding:6rem 0;
   }
   .left-skill-wrapper {
     width: 90%;
