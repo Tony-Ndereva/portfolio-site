@@ -1,11 +1,14 @@
+import { BiMoon } from "react-icons/bi";
+import { TfiShine } from "react-icons/tfi";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import CV from "../assets/tonyCV.pdf";
 
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navBar, setNavBar] = useState(false);
   const [toggle, setToggle] = useState(false);
+  const [lightMode, setLightMode] = useState(false);
 
   function handleToggle() {
     setToggle(!toggle);
@@ -16,6 +19,9 @@ const Navbar = () => {
     } else {
       ("");
     }
+  }
+  function handleLightMode() {
+    setLightMode(prevMode=>!prevMode);
   }
   function handleNavClick() {
     setToggle(false);
@@ -64,6 +70,13 @@ const Navbar = () => {
             <i className="fa-regular fa-file"></i>
             Resume
           </a>
+        </div>
+        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
+          {lightMode === false ? (
+            <TfiShine className="darkmode-toggler" onClick={handleLightMode} />
+          ) : (
+            <BiMoon className="darkmode-toggler" onClick={handleLightMode} />
+          )}
         </div>
       </div>
     </section>
