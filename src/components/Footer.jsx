@@ -13,7 +13,7 @@ const Footer = (props) => {
           </h4>
         </div>
         <div className="footer-copyright">
-          <h4>Copyright &copy; 2017 - {getYear()} </h4>
+          <h4>Copyright &copy; {getYear()} </h4>
         </div>
         <div className="footer-socials">
           <Socials />
