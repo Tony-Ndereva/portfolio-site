@@ -318,8 +318,10 @@ h3 {
 
 .nav-toggler {
   font-size: 1.9rem;
-
   display: none;
+}
+.darkmode-toggler {
+  font-size: 1.9rem;
 }
 
 /* Media queries start here */
