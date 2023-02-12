@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import icta from "./assets/pictures/ictalogo.jpg";
 import connected from "./assets/pictures/connected2023.png";
-import kasneb from "./assets/pictures/kasneb.svg";
+import kasneb from "./assets/pictures/kasneb.png"
 import ybk from './assets/pictures/ybk.jpeg'
 
 export default [
