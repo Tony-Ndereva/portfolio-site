@@ -20,12 +20,11 @@ const App = () => {
   });
 
   return (
-    <>
+    <div id="dark">
       <Particle />
       <Navbar />
       <Routes>
         <Route path="/" element={home}></Route>
-
         <Route
           path="/Projects"
           element={
@@ -44,7 +43,7 @@ const App = () => {
         <Route path="/Skills" element={<Skills />}></Route>
       </Routes>
       {footer}
-    </>
+    </div>
   );
 };
 
