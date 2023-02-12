@@ -1,9 +1,19 @@
 import Lottie from "lottie-react";
 import skills from "../assets/skills.json";
-import { DiHtml5,DiNodejs,DiCss3,DiReact,DiJavascript1,DiMongodb, DiPython,DiWindows, DiLinux } from "react-icons/di";
-import {SiMysql} from 'react-icons/si'
-import {FaGit} from 'react-icons/fa'
-import { IconContext } from "react-icons";
+import {
+  DiHtml5,
+  DiNodejs,
+  DiCss3,
+  DiReact,
+  DiJavascript1,
+  DiMongodb,
+  DiPython,
+  DiWindows,
+  DiLinux,
+} from "react-icons/di";
+import { SiMysql } from "react-icons/si";
+import { FaGit } from "react-icons/fa";
+
 const Skills = () => {
   const View = () => {
     return <Lottie animationData={skills} />;
