@@ -20,8 +20,9 @@ const Navbar = () => {
       ("");
     }
   }
+
   function handleLightMode() {
-    setLightMode(prevMode=>!prevMode);
+    setLightMode((prevMode) => !prevMode);
   }
   function handleNavClick() {
     setToggle(false);
@@ -39,9 +40,9 @@ const Navbar = () => {
   }, []);
   return (
     <section className={`navbar ${navBar ? "scrolled" : ""}`}>
-      <div className="nav-container">
+      <div className={`nav-container ${!toggle ? "flat" : ""}`}>
         <div className="nav-item">
-          {toggle === false ? (
+          {!toggle ? (
             <FaBars onClick={handleToggle} className="nav-toggler" />
           ) : (
             <FaTimes onClick={handleToggle} className="nav-toggler" />
@@ -71,8 +72,8 @@ const Navbar = () => {
             Resume
           </a>
         </div>
-        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
-          {lightMode === false ? (
+        <div className={`nav-item`} onClick={handleNavClick}>
+          {!lightMode ? (
             <TfiShine className="darkmode-toggler" onClick={handleLightMode} />
           ) : (
             <BiMoon className="darkmode-toggler" onClick={handleLightMode} />
