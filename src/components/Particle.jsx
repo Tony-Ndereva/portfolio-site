@@ -1,5 +1,6 @@
 import { random } from "nanoid";
 import { useCallback } from "react";
+import { FaSmileBeam } from "react-icons/fa";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -16,7 +17,7 @@ const Particle = () => {
             value: "#fff",
           },
           number: {
-            value: 80,
+            value: 30,
           },
           opacity: {
             value: { min: 0.3, max: 0.4 },
