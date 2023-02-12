@@ -26,6 +26,10 @@ const Navbar = () => {
   }
   function handleNavClick() {
     setToggle(false);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
   function changeBackground() {
     if (window.scrollY >= 66) {
@@ -72,7 +76,10 @@ const Navbar = () => {
             Resume
           </a>
         </div>
-        <div className={`nav-item`} onClick={handleNavClick}>
+        <div
+          className={`nav-item ${toggle ? "none" : ""}`}
+          onClick={handleNavClick}
+        >
           {!lightMode ? (
             <TfiShine className="darkmode-toggler" onClick={handleLightMode} />
           ) : (
