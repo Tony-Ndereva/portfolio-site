@@ -450,4 +450,10 @@ h3 {
   .project-card {
     width: 90%;
   }
+
+  /* CSS rule below enables the navbar to re align on responsive */
+  .flat {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
