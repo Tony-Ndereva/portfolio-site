@@ -1,8 +1,9 @@
 import { nanoid } from "nanoid";
 import icta from "./assets/pictures/ictalogo.jpg";
 import connected from "./assets/pictures/connected2023.png";
-import kasneb from "./assets/pictures/kasneb.png"
-import ybk from './assets/pictures/ybk.jpeg'
+import kasneb from "./assets/pictures/kasneb.png";
+import ybk from "./assets/pictures/ybk.jpeg";
+import barbershop from "./assets/pictures/barbershop.png";
 
 export default [
   {
@@ -44,6 +45,15 @@ export default [
       projectImage: ybk,
       projectDescription:
         "YBK is a premium Gift Shop that deals with designing personalized Gifts ,Branding and printing co-operatw merchandise. I developed the main catalogue site that showcases different services offered and their prices. ",
+    },
+  },
+  {
+    projects: {
+      id: nanoid(),
+      projectName: "Barbershop booking system",
+      projectImage: barbershop,
+      projectDescription:
+        "This is an online booking system whereby enables clients see, book and pay for haircuts, spa work, and other beauty services.",
     },
   },
 ];
