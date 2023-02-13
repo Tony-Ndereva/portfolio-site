@@ -7,15 +7,18 @@ import { Routes, Route } from "react-router-dom";
 import resumeData from "./resumeData";
 import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
+import { useState } from "react";
 
 const App = () => {
-  const projects = resumeData.map((each) => {
+  const [projectsData, setProjectsData] = useState(resumeData);
+  const [userData, setUserData] = useState(Tonydetails);
+  const projects = projectsData.map((each) => {
     return <Projects {...each.projects} key={each.projects.id} />;
   });
-  const footer = Tonydetails.map((each) => {
+  const footer = userData.map((each) => {
     return <Footer {...each.details} key={each.details.id} />;
   });
-  const home = Tonydetails.map((each) => {
+  const home = userData.map((each) => {
     return <Home {...each.details} key={each.details.id} />;
   });
 
