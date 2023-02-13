@@ -123,9 +123,9 @@
     <div id="root"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
-      setTimeout(function () {
-        $("#preloader").fadeToggle();
-      }, 2200);
+      window.addEventListener("load", function () {
+        $("#preloader").delay(350).fadeOut("slow");
+      });
     </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
