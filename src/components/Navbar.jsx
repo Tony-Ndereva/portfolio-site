@@ -2,7 +2,7 @@ import { BiMoon } from "react-icons/bi";
 import { TfiShine } from "react-icons/tfi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import CV from "../assets/tonyCV.pdf";
+
 
 import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -71,7 +71,11 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
-          <a href={CV} className="Nav-link" download>
+          <a
+            href="https://drive.google.com/file/d/1YGlwGRgWGkWwyDBU0YUHPQDPY7R-H8Kr/view?usp=share_link"
+            className="Nav-link"
+            target="_blank"
+          >
             <i className="fa-regular fa-file"></i>
             Resume
           </a>
