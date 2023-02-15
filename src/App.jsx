@@ -8,7 +8,6 @@ import resumeData from "./resumeData";
 import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
 import { useState } from "react";
-
 const App = () => {
   const [projectsData, setProjectsData] = useState(resumeData);
   const [userData, setUserData] = useState(Tonydetails);
@@ -23,7 +22,7 @@ const App = () => {
   });
 
   return (
-    <div id="dark">
+    <div>
       <Particle />
       <Navbar />
       <Routes>
@@ -38,7 +37,6 @@ const App = () => {
                 </h1>
                 <h3>Here are afew projects I've worked on recently.</h3>
               </div>
-
               <div className="project-container">{projects}</div>
             </section>
           }
