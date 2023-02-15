@@ -6,8 +6,10 @@ import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const [navBar, setNavBar] = useState(false);
+  const [navBarScrolled, setNavBarScrolled] = useState(false);
+  // This state above holds the state to determine if the window page is scrolled past 66px on Y-axis
   const [toggle, setToggle] = useState(false);
+  // This state above defines the state at which the opening and closing of the navbar on responsive devices operates
   const [lightMode, setLightMode] = useState(false);
 
   function handleToggle() {
@@ -33,9 +35,9 @@ const Navbar = () => {
   }
   function changeBackground() {
     if (window.scrollY >= 66) {
-      setNavBar(true);
+      setNavBarScrolled(true);
     } else {
-      setNavBar(false);
+      setNavBarScrolled(false);
     }
   }
 
@@ -43,7 +45,7 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackground);
   }, []);
   return (
-    <section className={`navbar ${navBar ? "scrolled" : ""}`}>
+    <section className={`navbar ${navBarScrolled ? "scrolled" : ""}`}>
       <div className={`nav-container ${!toggle ? "flat" : ""}`}>
         <div className="nav-item">
           {!toggle ? (
@@ -80,8 +82,8 @@ const Navbar = () => {
             Resume
           </a>
         </div>
-        <div
-          className={`nav-item ${toggle ? "none" : ""}`}
+        <button
+          className={`nav-item ${toggle ? "none" : ""} transparent`}
           onClick={handleNavClick}
         >
           {!lightMode ? (
@@ -89,7 +91,7 @@ const Navbar = () => {
           ) : (
             <BiMoon className="darkmode-toggler" onClick={handleLightMode} />
           )}
-        </div>
+        </button>
       </div>
     </section>
   );
