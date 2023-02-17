@@ -14,7 +14,7 @@ import ReactGa from "react-ga";
 const App = () => {
   useEffect(() => {
     ReactGa.initialize("G-PDKKQWSDJX");
-    ReactGa.pageview("/");
+    ReactGa.pageview(window.location.pathname);
   }, []);
   const [projectsData, setProjectsData] = useState(resumeData);
   const [userData, setUserData] = useState(Tonydetails);
