@@ -9,11 +9,14 @@ import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/ThemeChanger";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga4";
 
-const TRACKING_ID = 'G-PDKKQWSDJX'
-ReactGa.initialize(TRACKING_ID)
+const TRACKING_ID = "G-PDKKQWSDJX";
+ReactGA.initialize(TRACKING_ID);
 const App = () => {
+  useEffect(()=>{
+    ReactGA.send('pageview')
+  })
   const [projectsData, setProjectsData] = useState(resumeData);
   const [userData, setUserData] = useState(Tonydetails);
   const projects = projectsData.map((each) => {
