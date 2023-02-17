@@ -7,11 +7,15 @@ import { Routes, Route } from "react-router-dom";
 import resumeData from "./resumeData";
 import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/ThemeChanger";
-import useLocalStorage from "use-local-storage";
+import ReactGa from 'react-ga'
 
 const App = () => {
+  useEffect(()=>{
+    ReactGa.initialize('G-PDKKQWSDJX')
+    ReactGa.pageview('/')
+  },[])
   const [projectsData, setProjectsData] = useState(resumeData);
   const [userData, setUserData] = useState(Tonydetails);
   const projects = projectsData.map((each) => {
