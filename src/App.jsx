@@ -9,13 +9,13 @@ import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/ThemeChanger";
-import ReactGa from 'react-ga'
+import ReactGa from "react-ga";
 
 const App = () => {
-  useEffect(()=>{
-    ReactGa.initialize('G-PDKKQWSDJX')
-    ReactGa.pageview('/')
-  },[])
+  useEffect(() => {
+    ReactGa.initialize("G-PDKKQWSDJX");
+    ReactGa.pageview("/");
+  }, []);
   const [projectsData, setProjectsData] = useState(resumeData);
   const [userData, setUserData] = useState(Tonydetails);
   const projects = projectsData.map((each) => {
@@ -33,9 +33,9 @@ const App = () => {
   //console.log(lightMode)
 
   const { theme, setTheme } = useContext(ThemeContext);
- 
+
   return (
-    <div data-theme={theme} className='app'>
+    <div data-theme={theme} className="app">
       <Particle />
       <Navbar />
       <Routes>
