@@ -2,7 +2,7 @@ import { BiMoon } from "react-icons/bi";
 import { TfiShine } from "react-icons/tfi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
-import useLocalStorage from "use-local-storage";
+import Switch from "react-switch";
 
 import { Link } from "react-router-dom";
 import { ThemeContext } from "./ThemeChanger";
@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const { theme, setTheme } = useContext(ThemeContext);
   const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
+    const newTheme = theme === "dark" ? "light" : "dark";
 
     setTheme(newTheme);
   };
@@ -100,16 +100,19 @@ const Navbar = () => {
             Resume
           </a>
         </div>
-        <button
+        {/* <button
           className={`nav-item ${toggle ? "none" : ""} transparent`}
-          onClick={automaticNavClose}
+         
         >
           {theme === "light" ? (
             <TfiShine className="darkmode-toggler" onClick={switchTheme} />
           ) : (
             <BiMoon className="darkmode-toggler" onClick={switchTheme} />
           )}
-        </button>
+        </button> */}
+        <div className={`nav-item ${toggle ? "none" : ""} transparent`}>
+          <Switch onChange={switchTheme} checked={theme === 'dark'} color={'blue'} checkedIcon={false} uncheckedIcon={false}onColor={'black'}/>
+        </div>
       </div>
     </section>
   );

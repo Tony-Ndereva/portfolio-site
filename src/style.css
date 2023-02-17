@@ -10,7 +10,8 @@
   --lose_color: transparent;
   --bg_OnScroll: #212038d8;
   --bg_ResponsiveNavBar: rgb(24, 26, 39);
-  --primaryBorderColor : rgba(200, 137, 230, 0.637);
+  --primaryBorderColor: rgba(200, 137, 230, 0.637);
+  --ProjectCardBoxShadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
   /* CSS rule above defines the color of the whole body */
 }
 .app {
@@ -32,7 +33,8 @@
     rgba(255, 255, 255, 1) 100%
   );
   --bg_ResponsiveNavBar: #fff;
-  --primaryBorderColor :#333;
+  --primaryBorderColor: #333;
+  --ProjectCardBoxShadow: none;
 }
 * {
   color: var(--primary_color);
@@ -369,6 +371,7 @@ p {
   flex-wrap: wrap;
 }
 .project-card {
+  /* background-color: var(--lose_color); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -378,7 +381,7 @@ p {
   padding: 2rem;
   border-radius: 1.2rem;
   border: 1px solid #aaa8ad;
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  box-shadow: var(--ProjectCardBoxShadow);
   margin: 1.1rem;
   transition: all 0.5s ease 0s;
 }
@@ -555,7 +558,7 @@ h3 {
   }
   .about-header h2 {
     width: 100%;
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
   .description {
     width: 100%;
@@ -610,7 +613,7 @@ h3 {
     font-size: 10rem;
   }
   .project-section {
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -638,43 +641,50 @@ h3 {
   }
 }
 
-@media only screen and (min-width:794px) and (max-width:1199px){
-
-
+@media only screen and (min-width: 794px) and (max-width: 1199px) {
   .description {
     width: 53%;
     font-size: 1.2rem;
   }
   .about-header h2 {
-    font-size:1.5rem;
-    width:50%;
+    font-size: 1.5rem;
+    width: 50%;
   }
   .nav-item {
-    padding:0.9rem;
+    padding: 0.9rem;
     margin: 0 1.5rem;
   }
   .contacts-icons i {
     padding: 0.9rem;
     font-size: 1.2rem;
-}
-.footer {
-  font-size: 0.9rem;
-}
-.skill-description {
-  font-size:1.2rem;
-}
-.skill-header{
-  font-size:1.5rem;
-  text-align:left;
-}
-.tech-icon {
-  width:34%;
-}
+  }
+  .footer {
+    font-size: 0.9rem;
+  }
+  .skill-description {
+    font-size: 1.2rem;
+  }
+  .skill-header {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .tech-icon {
+    width: 34%;
+  }
 
-.project-intro h1, h3 {
-  font-size: 2.0rem;
-}
-.project-card {
-  width:44%;
-}
+  .project-intro h1,
+  h3 {
+    font-size: 2rem;
+  }
+  .project-card {
+    width: 44%;
+  }
+  .heading,
+  .heading-name,
+  .typewriter {
+    font-size: 3.2rem;
+  }
+  .right {
+    width:39%;
+  }
 }
