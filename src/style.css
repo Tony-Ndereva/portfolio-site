@@ -504,7 +504,7 @@ h3 {
 
 /* Media queries start here */
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 793px) {
   .nav-toggler {
     display: block;
   }
@@ -636,4 +636,45 @@ h3 {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+@media only screen and (min-width:794px) and (max-width:1199px){
+
+
+  .description {
+    width: 53%;
+    font-size: 1.2rem;
+  }
+  .about-header h2 {
+    font-size:1.5rem;
+    width:50%;
+  }
+  .nav-item {
+    padding:0.9rem;
+    margin: 0 1.5rem;
+  }
+  .contacts-icons i {
+    padding: 0.9rem;
+    font-size: 1.2rem;
+}
+.footer {
+  font-size: 0.9rem;
+}
+.skill-description {
+  font-size:1.2rem;
+}
+.skill-header{
+  font-size:1.5rem;
+  text-align:left;
+}
+.tech-icon {
+  width:34%;
+}
+
+.project-intro h1, h3 {
+  font-size: 2.0rem;
+}
+.project-card {
+  width:44%;
+}
 }
