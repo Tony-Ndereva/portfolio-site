@@ -13,8 +13,13 @@ import {
 } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
+import ReactGA from 'react-ga'
+import { useEffect } from "react";
 
 const Skills = () => {
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname)
+  },[])
   const View = () => {
     return <Lottie animationData={skills} />;
   };

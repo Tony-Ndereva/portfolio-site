@@ -11,11 +11,9 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/ThemeChanger";
 import ReactGa from "react-ga";
 
+const TRACKING_ID = 'G-PDKKQWSDJX'
+ReactGa.initialize(TRACKING_ID)
 const App = () => {
-  useEffect(() => {
-    ReactGa.initialize("G-PDKKQWSDJX");
-    ReactGa.pageview(window.location.pathname);
-  }, []);
   const [projectsData, setProjectsData] = useState(resumeData);
   const [userData, setUserData] = useState(Tonydetails);
   const projects = projectsData.map((each) => {
