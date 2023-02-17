@@ -7,7 +7,9 @@ import { Routes, Route } from "react-router-dom";
 import resumeData from "./resumeData";
 import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ThemeContext } from "./components/ThemeChanger";
+import useLocalStorage from "use-local-storage";
 
 const App = () => {
   const [projectsData, setProjectsData] = useState(resumeData);
@@ -22,8 +24,14 @@ const App = () => {
     return <Home {...each.details} key={each.details.id} />;
   });
 
+  // The code just below gets the props for lightMode
+  //const {lightMode} = useContext(ThemeContext)
+  //console.log(lightMode)
+
+  const { theme, setTheme } = useContext(ThemeContext);
+ 
   return (
-    <div>
+    <div data-theme={theme} className='app'>
       <Particle />
       <Navbar />
       <Routes>

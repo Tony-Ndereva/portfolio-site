@@ -1,16 +1,33 @@
 import { BiMoon } from "react-icons/bi";
 import { TfiShine } from "react-icons/tfi";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect, useState } from "react";
+import useLocalStorage from "use-local-storage";
 
 import { Link } from "react-router-dom";
+import { ThemeContext } from "./ThemeChanger";
+
 const Navbar = () => {
   const [navBarScrolled, setNavBarScrolled] = useState(false);
   // This state above holds the state to determine if the window page is scrolled past 66px on Y-axis
   const [toggle, setToggle] = useState(false);
   // This state above defines the state at which the opening and closing of the navbar on responsive devices operates
-  const [lightMode, setLightMode] = useState(false);
+
+  // const [theme, setTheme] = useState("theme" ? "light" : "dark");
+  // function switchTheme() {
+  //   const newTheme = theme === "dark" ? "light" : "dark";
+  //   setTheme(newTheme);
+  // }
+
+  const { theme, setTheme } = useContext(ThemeContext);
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+
+    setTheme(newTheme);
+  };
+  // function handleTheme() {
+  //   setLightMode((prevTheme) => !prevTheme);
+  // }
 
   function handleToggle() {
     setToggle(!toggle);
@@ -22,12 +39,12 @@ const Navbar = () => {
       ("");
     }
   }
-
-  function handleLightMode() {
-    setLightMode((prevMode) => !prevMode);
-  }
-  function handleNavClick() {
+  function automaticNavClose() {
     setToggle(false);
+  }
+
+  function handleNavClick() {
+    automaticNavClose();
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -44,8 +61,9 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
   }, []);
+
   return (
-    <section className={`navbar ${navBarScrolled ? "scrolled" : ""}`}>
+    <section className={`navbar ${navBarScrolled ? "scrolled" : ""} `}>
       <div className={`nav-container ${!toggle ? "flat" : ""}`}>
         <div className="nav-item">
           {!toggle ? (
@@ -84,12 +102,12 @@ const Navbar = () => {
         </div>
         <button
           className={`nav-item ${toggle ? "none" : ""} transparent`}
-          onClick={handleNavClick}
+          onClick={automaticNavClose}
         >
-          {!lightMode ? (
-            <TfiShine className="darkmode-toggler" onClick={handleLightMode} />
+          {theme === "light" ? (
+            <TfiShine className="darkmode-toggler" onClick={switchTheme} />
           ) : (
-            <BiMoon className="darkmode-toggler" onClick={handleLightMode} />
+            <BiMoon className="darkmode-toggler" onClick={switchTheme} />
           )}
         </button>
       </div>
