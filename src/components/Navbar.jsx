@@ -113,7 +113,7 @@ const Navbar = () => {
         <div className={`nav-item ${toggle ? "none" : ""} transparent`}>
           <Switch
             onChange={switchTheme}
-            checked={theme === "dark"}
+            checked={theme === "light"}
             checkedIcon={false}
             uncheckedIcon={false}
             onColor={"#A020F0"}

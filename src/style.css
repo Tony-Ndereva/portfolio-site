@@ -20,7 +20,7 @@
   -webkit-transition: background-color 650ms linear;
   -ms-transition: background-color 650ms linear;
 }
-[data-theme="dark"] {
+[data-theme="light"] {
   --primary_color: #333;
   --secondary_color: #fff;
   --bg_SecondaryColor: ivory;
