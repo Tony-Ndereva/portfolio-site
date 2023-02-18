@@ -188,7 +188,7 @@
 
 .navbar {
   background-color: var(--lose_color);
-  margin-top: -5px;
+  /* margin-top: -5px; */
   position: sticky;
   top: 0;
   z-index: 2222;
@@ -520,7 +520,7 @@ h3 {
   .nav-container {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     justify-content: center;
     align-items: flex-end;
@@ -613,7 +613,7 @@ h3 {
     font-size: 10rem;
   }
   .project-section {
-    margin-top: 5rem;
+    /* margin-top: 2rem; */
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
