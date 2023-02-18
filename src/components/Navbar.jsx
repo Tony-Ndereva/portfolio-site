@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const { theme, setTheme } = useContext(ThemeContext);
   const switchTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
+    const newTheme = theme === "light" ? "dark" : "light";
 
     setTheme(newTheme);
   };
