@@ -514,15 +514,15 @@ h3 {
 
   .navbar {
     width: 100%;
-    /* z-index: 11; */
-    transition: all 0.3s ease-out 0s !important;
-    position: sticky;
+    z-index: 1001;
+    transition: all 0.3s ease-out 0s;
+    position: fixed;
   }
   .nav-container {
     display: flex;
     flex-direction: column;
-    
-    
+    /* position: fixed; */
+    top: 0;
     justify-content: center;
     align-items: flex-end;
     background-color: var(--bg_ResponsiveNavBar);
@@ -639,6 +639,7 @@ h3 {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    transition: 500ms;
   }
 }
 
@@ -686,6 +687,6 @@ h3 {
     font-size: 3.2rem;
   }
   .right {
-    width:39%;
+    width: 39%;
   }
 }
