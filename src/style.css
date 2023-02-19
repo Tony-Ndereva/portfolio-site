@@ -514,9 +514,9 @@ h3 {
 
   .navbar {
     width: 100%;
-    z-index: 11;
+    /* z-index: 11; */
     transition: all 0.3s ease-out 0s !important;
-    position: fixed;
+    position: sticky;
   }
   .nav-container {
     display: flex;
