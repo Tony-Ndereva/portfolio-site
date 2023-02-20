@@ -6,8 +6,10 @@ import Switch from "react-switch";
 
 import { Link } from "react-router-dom";
 import { ThemeContext } from "./ThemeChanger";
+import GAEventsTracker from "./GAEventsTracker";
 
 const Navbar = () => {
+  const EventsTracker = GAEventsTracker("Navbar events");
   const [navBarScrolled, setNavBarScrolled] = useState(false);
   // This state above holds the state to determine if the window page is scrolled past 66px on Y-axis
   const [toggle, setToggle] = useState(false);
@@ -62,6 +64,11 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackground);
   }, []);
 
+  const resumeLink = {
+    resume:
+      "https://drive.google.com/file/d/1YGlwGRgWGkWwyDBU0YUHPQDPY7R-H8Kr/view?usp=share_link",
+  };
+  const { resume } = resumeLink;
   return (
     <section className={`navbar ${navBarScrolled ? "scrolled" : ""} `}>
       <div className={`nav-container ${!toggle ? "flat" : ""}`}>
@@ -92,7 +99,8 @@ const Navbar = () => {
         </div>
         <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
           <a
-            href="https://drive.google.com/file/d/1YGlwGRgWGkWwyDBU0YUHPQDPY7R-H8Kr/view?usp=share_link"
+            href={resume}
+            onClick={(e) => EventsTracker("Resume Page visit", resume)}
             className="Nav-link"
             target="_blank"
           >
@@ -110,7 +118,10 @@ const Navbar = () => {
             <BiMoon className="darkmode-toggler" onClick={switchTheme} />
           )}
         </button> */}
-        <div className={`nav-item ${toggle ? "none" : ""} transparent`}>
+        <div
+          className={`nav-item ${toggle ? "none" : ""} transparent`}
+          onClick={(e) => EventsTracker("LightMode Toggle","Theme switch")}
+        >
           <Switch
             onChange={switchTheme}
             checked={theme === "light"}
