@@ -1,31 +1,53 @@
+import GAEventsTracker from "./GAEventsTracker";
+
+const externalData = {
+  Github: "https://github.com/G-69westside",
+  LinkedIn: "https://www.linkedin.com/in/tony-maluki-9b9611173/",
+  Instagram: "https://www.instagram.com/life.astony/",
+  Twitter :"https://twitter.com/asap_toni",
+  Email: 'mailto:tonymaluki@gmail.com'
+
+};
+const {Github,Instagram,LinkedIn,Twitter,Email} = externalData;
 const Socials = () => {
+  const EventsTracker = GAEventsTracker("External Links");
   return (
     <div className="contacts-icons">
-      <a href="https://github.com/G-69westside" target="_blank">
+      <a
+        href={Github}
+        target="_blank"
+        onClick={(e) => EventsTracker("GitHub page visit", Github)}
+      >
         <i className="fa-brands fa-github"></i>
       </a>
       <a
-        href="https://www.linkedin.com/in/tony-maluki-9b9611173/"
+        href={LinkedIn}
+        onClick={(e) => EventsTracker("LinkedIN page visit",LinkedIn)}
         target="_blank"
         rel="noopener noreferrer"
       >
         <i className="fa-brands fa-linkedin-in"></i>
       </a>
       <a
-        href="https://www.instagram.com/life.astony/"
+        href={Instagram}
+        onClick={(e) => EventsTracker("Instagram page visit", Instagram)}
         target="_blank"
         rel="noopener noreferrer"
       >
         <i className="fa-brands fa-instagram"></i>
       </a>
       <a
-        href="https://twitter.com/asap_toni"
+        href={Twitter}
+        onClick={(e) => EventsTracker("Twitter page visit", Twitter)}
         target="_blank"
         rel="noopener noreferrer"
       >
         <i className="fa-brands fa-twitter"></i>
       </a>
-      <a href="mailto:tonymaluki@gmail.com">
+      <a
+        href={Email}
+        onClick={(e) => EventsTracker("Email page visit", Email)}
+      >
         <i className="fa-solid fa-envelope"></i>
       </a>
     </div>
