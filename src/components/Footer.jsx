@@ -8,7 +8,7 @@ const Footer = (props) => {
       <div className="row">
         <div className="footer-copyright">
           <h4>
-             Designed and Developed by{" "}
+            Designed and Developed by{" "}
             <span className="orange">{props.name}</span>
           </h4>
         </div>

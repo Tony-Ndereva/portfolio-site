@@ -4,11 +4,10 @@ const externalData = {
   Github: "https://github.com/G-69westside",
   LinkedIn: "https://www.linkedin.com/in/tony-maluki-9b9611173/",
   Instagram: "https://www.instagram.com/life.astony/",
-  Twitter :"https://twitter.com/asap_toni",
-  Email: 'mailto:tonymaluki@gmail.com'
-
+  Twitter: "https://twitter.com/asap_toni",
+  Email: "mailto:tonymaluki@gmail.com",
 };
-const {Github,Instagram,LinkedIn,Twitter,Email} = externalData;
+const { Github, Instagram, LinkedIn, Twitter, Email } = externalData;
 const Socials = () => {
   const EventsTracker = GAEventsTracker("External Links");
   return (
@@ -22,7 +21,7 @@ const Socials = () => {
       </a>
       <a
         href={LinkedIn}
-        onClick={(e) => EventsTracker("LinkedIN page visit",LinkedIn)}
+        onClick={(e) => EventsTracker("LinkedIN page visit", LinkedIn)}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -44,10 +43,7 @@ const Socials = () => {
       >
         <i className="fa-brands fa-twitter"></i>
       </a>
-      <a
-        href={Email}
-        onClick={(e) => EventsTracker("Email page visit", Email)}
-      >
+      <a href={Email} onClick={(e) => EventsTracker("Email page visit", Email)}>
         <i className="fa-solid fa-envelope"></i>
       </a>
     </div>

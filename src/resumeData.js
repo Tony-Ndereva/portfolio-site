@@ -45,8 +45,8 @@ export default [
       projectImage: ybk,
       projectDescription:
         "YBK is a premium Gift Shop that deals with designing personalized Gifts ,Branding and printing co-operatw merchandise. I developed the main catalogue site that showcases different services offered and their prices. ",
-   projectLink: "http://tony-personal-project.000webhostapp.com/ybk/"
-      },
+      projectLink: "http://tony-personal-project.000webhostapp.com/ybk/",
+    },
   },
   {
     projects: {

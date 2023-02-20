@@ -515,7 +515,7 @@ h3 {
   .navbar {
     width: 100%;
     z-index: 1001;
-    transition: all 0.3s ease-out 0s;
+    transition: all 0.9s ease-out 500ms;
     position: fixed;
   }
   .nav-container {

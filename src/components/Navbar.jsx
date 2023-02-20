@@ -1,9 +1,6 @@
-import { BiMoon } from "react-icons/bi";
-import { TfiShine } from "react-icons/tfi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
 import Switch from "react-switch";
-
 import { Link } from "react-router-dom";
 import { ThemeContext } from "./ThemeChanger";
 import GAEventsTracker from "./GAEventsTracker";
@@ -15,21 +12,12 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   // This state above defines the state at which the opening and closing of the navbar on responsive devices operates
 
-  // const [theme, setTheme] = useState("theme" ? "light" : "dark");
-  // function switchTheme() {
-  //   const newTheme = theme === "dark" ? "light" : "dark";
-  //   setTheme(newTheme);
-  // }
-
   const { theme, setTheme } = useContext(ThemeContext);
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
 
     setTheme(newTheme);
   };
-  // function handleTheme() {
-  //   setLightMode((prevTheme) => !prevTheme);
-  // }
 
   function handleToggle() {
     setToggle(!toggle);
@@ -66,7 +54,7 @@ const Navbar = () => {
 
   const resumeLink = {
     resume:
-      "https://drive.google.com/file/d/1YGlwGRgWGkWwyDBU0YUHPQDPY7R-H8Kr/view?usp=share_link",
+      "https://drive.google.com/file/d/1JZwX7ur2NP38f5OhIRlRs1TejiRHbEDB/view?usp=share_link",
   };
   const { resume } = resumeLink;
   return (
@@ -108,19 +96,9 @@ const Navbar = () => {
             Resume
           </a>
         </div>
-        {/* <button
-          className={`nav-item ${toggle ? "none" : ""} transparent`}
-         
-        >
-          {theme === "light" ? (
-            <TfiShine className="darkmode-toggler" onClick={switchTheme} />
-          ) : (
-            <BiMoon className="darkmode-toggler" onClick={switchTheme} />
-          )}
-        </button> */}
         <div
           className={`nav-item ${toggle ? "none" : ""} transparent`}
-          onClick={(e) => EventsTracker("LightMode Toggle","Theme switch")}
+          onClick={(e) => EventsTracker("LightMode Toggle", "Theme switch")}
         >
           <Switch
             onChange={switchTheme}

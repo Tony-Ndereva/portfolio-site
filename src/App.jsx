@@ -11,7 +11,6 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/ThemeChanger";
 import ReactGA from "react-ga";
 
-
 const TRACKING_ID = "UA-257499540-1";
 ReactGA.initialize(TRACKING_ID);
 
