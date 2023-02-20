@@ -2,7 +2,7 @@
   --primary_color: #ffff;
   --secondary_color: black;
   --special_color: orange;
-  /* --primary-font: "Shadows Into Light", cursive; */
+
   --primary-font: "Itim", cursive;
   --secondary-font: "Courier New", Courier, monospace;
   --bg_SecondaryColor: rgb(10, 4, 22);
@@ -54,12 +54,9 @@
   --bg: hsl(var(--hue), 90%, 90%);
   --fg: hsl(var(--hue), 90%, 10%);
   --trans-dur: 0.3s;
-  /* font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320)); */
 }
 #preloader {
-  /* background-color: var(--bg); */
   background-color: #0a0416;
-
   position: fixed;
   z-index: 99999999999;
   width: 100vw;
@@ -188,13 +185,9 @@
 
 .navbar {
   background-color: var(--lose_color);
-  /* margin-top: -5px; */
   position: sticky;
   top: 0;
   z-index: 2222;
-  /* background-color: red; */
-  /* -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px); */
   -webkit-transition: background-color 650ms linear;
   -ms-transition: background-color 650ms linear;
   transition: background-color 650ms linear;
@@ -204,7 +197,6 @@
   justify-content: flex-end;
   margin-right: 1.5rem;
   align-items: center;
-  /* margin-right: 20rem; */
 }
 .nav-item {
   padding: 1.5rem;
@@ -301,7 +293,6 @@ a:visited {
 }
 
 .about {
-  /* position: relative; */
   padding: 4rem;
   margin-top: 2rem;
 }
@@ -347,7 +338,6 @@ a:visited {
 
 .scrolled {
   background-color: var(--bg_OnScroll);
-  /* background-color: transparent; */
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
@@ -362,7 +352,6 @@ p {
 }
 
 .project-section {
-  /* display: flex; */
   margin: 3.5rem;
 }
 .project-container {
@@ -371,7 +360,6 @@ p {
   flex-wrap: wrap;
 }
 .project-card {
-  /* background-color: var(--lose_color); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -478,7 +466,6 @@ h3 {
   margin: 3rem;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
   transition: all 0.4s ease 0s;
-  /* opacity:0.93 */
 }
 
 .tech-icon:hover {
@@ -521,7 +508,6 @@ h3 {
   .nav-container {
     display: flex;
     flex-direction: column;
-    /* position: fixed; */
     top: 0;
     justify-content: center;
     align-items: flex-end;
