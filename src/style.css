@@ -524,7 +524,7 @@ h3 {
     align-items: center;
   }
   .left {
-    padding: 4rem 0;
+    padding-top:  4rem;
   }
   .heading,
   .heading-name,
@@ -540,9 +540,7 @@ h3 {
     align-items: center;
     justify-content: center;
   }
-  .right {
-    margin-top: 4.5rem;
-  }
+ 
   .about-header h2 {
     width: 100%;
     font-size: 1.3rem;
