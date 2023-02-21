@@ -8,7 +8,7 @@ const TypeWriter = () => {
             "Web Developer",
             "IT Consultant",
             "Project Manager",
-            "Networking Guru",
+            "Learner",
           ],
           autoStart: true,
           loop: true,
