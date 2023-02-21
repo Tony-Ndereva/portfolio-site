@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import resumeData from "./resumeData";
 import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
@@ -12,12 +12,15 @@ import { ThemeContext } from "./components/ThemeChanger";
 import ReactGA from "react-ga";
 
 const TRACKING_ID = "UA-257499540-1";
+
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
+  const location = useLocation();
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  });
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+
   const [projectsData, setProjectsData] = useState(resumeData);
   const [userData, setUserData] = useState(Tonydetails);
   const projects = projectsData.map((each) => {
