@@ -26,7 +26,7 @@ const Navbar = () => {
     if (toggle === false) {
       return "none";
     } else {
-      ("");
+      return "";
     }
   }
   function automaticNavClose() {
