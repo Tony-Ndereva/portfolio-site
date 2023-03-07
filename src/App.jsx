@@ -11,7 +11,7 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/ThemeChanger";
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "UA-257499540-1";
+const TRACKING_ID = "UA-257499540-3";
 
 ReactGA.initialize(TRACKING_ID);
 
@@ -53,7 +53,7 @@ const App = () => {
                 <h1>
                   My Recent <span className="orange">Works</span>
                 </h1>
-                <h3>Here are afew projects I've worked on recently.</h3>
+                <h3>Here are a few projects I've worked on recently.</h3>
               </div>
               <div className="project-container">{projects}</div>
             </section>
