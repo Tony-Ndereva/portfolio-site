@@ -21,7 +21,7 @@ const Socials = () => {
       </a>
       <a
         href={LinkedIn}
-        onClick={(e) => EventsTracker("LinkedIN page visit", LinkedIn)}
+        onClick={(e) => EventsTracker("LinkedIn page visit", LinkedIn)}
         target="_blank"
         rel="noopener noreferrer"
       >
