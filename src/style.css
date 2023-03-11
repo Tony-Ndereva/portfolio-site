@@ -206,8 +206,6 @@
 .nav-item:hover{
   transform: scale(1.2) translateY(-4px);
   transition: 200ms;
-
-
 }
 .nav-item a {
   font-size: 1.9rem;
