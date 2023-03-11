@@ -10,7 +10,7 @@ const Projects = (props) => {
         <a
           className="project-link"
           href={props.projectLink}
-          onClick={(e) => EventsTracker(props.projectName, props.projectLink)}
+          onClick={() => EventsTracker(props.projectName, props.projectLink)}
           target="_blank"
           rel="noopener noreferrer"
         >
