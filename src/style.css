@@ -201,11 +201,11 @@
 .nav-item {
   padding: 1.5rem;
   margin: 0 1.7rem;
-  transition: 200ms;
+  transition: 190ms;
 }
 .nav-item:hover{
   transform: scale(1.2) translateY(-4px);
-  transition: 200ms;
+  transition: 190ms;
 }
 .nav-item a {
   font-size: 1.9rem;
