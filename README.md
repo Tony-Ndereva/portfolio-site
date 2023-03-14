@@ -2,13 +2,13 @@
 Tony Maluki's Portfolio Website
 This is my portfolio website built in React to showcase my skills, projects, and experience.
 
-Table of Contents
-Description
-Technologies
-Installation
-Usage
-Credits
-Description
+## Table of Contents
+**Description**
+**Technologies**
+**Installation**
+**Usage**
+**Credits**
+**Description**
 My portfolio website is designed to give potential clients and employers an overview of my skills and experience as a software developer. It features a clean and modern design, easy navigation, and showcases my projects, skills, and experience.
 
 Technologies
