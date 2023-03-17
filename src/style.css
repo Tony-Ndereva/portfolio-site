@@ -468,6 +468,7 @@ h3 {
   width: 15%;
   border: 1.7px solid var(--primaryBorderColor);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.9rem;
@@ -601,6 +602,10 @@ h3 {
     width: 40%;
     padding: 0.5rem;
     margin: 1rem;
+  }
+  .tech-icon p {
+    font-size:1.5rem;
+    font-weight: bold;
   }
   .react-icons {
     font-size: 10rem;
