@@ -77,6 +77,7 @@ const Skills = () => {
           </div>
           <div className="tech-icon">
             <SiMysql className="react-icons" />
+            <p>MySQL</p>
           </div>
           <div className="tech-icon">
             <DiPython className="react-icons" />
