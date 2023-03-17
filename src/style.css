@@ -203,7 +203,7 @@
   margin: 0 1.7rem;
   transition: 190ms;
 }
-.nav-item:hover{
+.nav-item:hover {
   transform: scale(1.2) translateY(-4px);
   transition: 190ms;
 }
@@ -326,6 +326,11 @@ a:visited {
 .contacts-icons i {
   padding: 1.4rem;
   font-size: 1.5rem;
+  transition: 1000ms;
+}
+.contacts-icons i:hover {
+  transform: rotateZ(360deg) scale(1.5);
+  transition: 1000ms;
 }
 
 .footer {
@@ -477,7 +482,7 @@ h3 {
   transition: all 0.4s ease 0s;
 }
 .tech-icon p {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .tech-icon:hover {
@@ -525,7 +530,6 @@ h3 {
     align-items: flex-end;
     background-color: var(--bg_ResponsiveNavBar);
     width: 100%;
-
   }
   .none {
     display: none;
@@ -536,7 +540,7 @@ h3 {
     align-items: center;
   }
   .left {
-    padding-top:  4rem;
+    padding-top: 4rem;
   }
   .heading,
   .heading-name,
@@ -552,7 +556,7 @@ h3 {
     align-items: center;
     justify-content: center;
   }
- 
+
   .about-header h2 {
     width: 100%;
     font-size: 1.3rem;
@@ -606,7 +610,7 @@ h3 {
     padding: 0.5rem;
     margin: 1rem;
   }
- 
+
   .react-icons {
     font-size: 10rem;
   }
