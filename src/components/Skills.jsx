@@ -53,36 +53,46 @@ const Skills = () => {
         <div className="icons-container">
           <div className="tech-icon">
             <DiHtml5 className="react-icons" />
+            <p>HTML 5</p>
           </div>
           <div className="tech-icon">
             <DiCss3 className="react-icons" />
+            <p>css 3</p>
           </div>
           <div className="tech-icon">
             <DiJavascript1 className="react-icons" />
+            <p>JavaScript</p>
           </div>
           <div className="tech-icon">
             <DiNodejs className="react-icons" />
+            <p>Node JS</p>
           </div>
           <div className="tech-icon">
             <DiReact className="react-icons" />
+            <p>React</p>
           </div>
           <div className="tech-icon">
             <DiMongodb className="react-icons" />
+            <p>Mongo DB</p>
           </div>
           <div className="tech-icon">
             <SiMysql className="react-icons" />
           </div>
           <div className="tech-icon">
             <DiPython className="react-icons" />
+            <p>Python</p>
           </div>
           <div className="tech-icon">
             <DiWindows className="react-icons" />
+            <p> Windows</p>
           </div>
           <div className="tech-icon">
             <DiLinux className="react-icons" />
+            <p>Linux</p>
           </div>
           <div className="tech-icon">
             <FaGit className="react-icons" />
+            <p>Git</p>
           </div>
         </div>
       </div>
