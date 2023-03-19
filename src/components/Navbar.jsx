@@ -99,14 +99,34 @@ const Navbar = () => {
         <div
           className={`nav-item ${toggle ? "none" : ""} transparent`}
           onClick={(e) => EventsTracker("LightMode Toggle", "Theme switch")}
+          
         >
-          <Switch
+          {/* <Switch
             onChange={switchTheme}
             checked={theme === "light"}
             checkedIcon={false}
             uncheckedIcon={false}
             onColor={"#A020F0"}
-          />
+          /> */}
+
+          <div>
+            <input
+              type="checkbox"
+              className="checkbox"
+              id="checkbox"
+              onChange={switchTheme}
+              checked={theme === "light"}
+              style={{ cursor: "pointer" }}
+            />
+            <label for="checkbox" className="label">
+              <i className="fas fa-moon" style={{ color: "pink" }}></i>
+              <i
+                className="fas fa-sun"
+                style={{ color: "yellow", fontSize: "0.8rem" }}
+              ></i>
+              <div className="ball"></div>
+            </label>
+          </div>
         </div>
       </div>
     </section>
