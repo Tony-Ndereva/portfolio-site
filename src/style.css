@@ -345,7 +345,7 @@ a:visited {
   height: 100%;
 }
 .home {
-  padding: 3rem;
+  padding: 4rem 3rem;
   background-color: var(--bg_SecondaryColor);
 }
 
