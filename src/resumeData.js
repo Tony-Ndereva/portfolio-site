@@ -4,6 +4,7 @@ import connected from "./assets/pictures/connected2023.png";
 import kasneb from "./assets/pictures/kasneb.png";
 import ybk from "./assets/pictures/ybk.jpeg";
 import barbershop from "./assets/pictures/barbershop.png";
+import tenzies from "./assets/pictures/tenzies.png";
 
 export default [
   {
@@ -56,6 +57,16 @@ export default [
       projectDescription:
         "This is an online booking system whereby enables clients see, book and pay for haircuts, spa work, and other beauty services.",
       projectLink: "https://github.com/G-69westside/FinalYrProject",
+    },
+  },
+  {
+    projects: {
+      id: nanoid(),
+      projectName: "Tenzies Game",
+      projectImage: tenzies,
+      projectDescription:
+        "Feeling bored? Try out my tenzies game built on react. Enjoy :)",
+      projectLink: "https://playtenziies.netlify.app",
     },
   },
 ];
