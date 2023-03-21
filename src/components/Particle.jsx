@@ -8,32 +8,81 @@ const Particle = () => {
     await loadFull(engine);
   });
 
+  // return (
+  //   <Particles
+  //     options={{
+  //       particles: {
+  //         color: {
+  //           value: "#fff",
+  //         },
+  //         number: {
+  //           value: 30,
+  //         },
+  //         opacity: {
+  //           value: { min: 0.3, max: 0.4 },
+  //         },
+  //         shape: {
+  //           type: "circle",
+  //         },
+  //         size: {
+  //           value: { min: 1, max: 5 },
+  //         },
+  //         move: {
+  //           direction:random,
+  //           enable: true,
+  //           speed: { min: 0.01, max: 0.5 },
+  //           straight: false,
+  //         },
+  //       },
+  //     }}
+  //     init={init}
+  //   />
+  // );
+
   return (
     <Particles
-      options={{
+      params={{
         particles: {
-          color: {
-            value: "#fff",
-          },
           number: {
-            value: 30,
+            value: 160,
+            density: {
+              enable: true,
+              value_area: 1500,
+            },
           },
-          opacity: {
-            value: { min: 0.3, max: 0.4 },
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            value: { min: 1, max: 5 },
+          line_linked: {
+            enable: false,
+            opacity: 0.03,
           },
           move: {
-            direction:random,
-            enable: true,
-            speed: { min: 0.01, max: 0.5 },
-            straight: false,
+            direction: "right",
+            speed: 0.05,
+          },
+          size: {
+            value: 1,
+          },
+          opacity: {
+            anim: {
+              enable: true,
+              speed: 1,
+              opacity_min: 0.05,
+            },
           },
         },
+        interactivity: {
+          events: {
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            push: {
+              particles_nb: 1,
+            },
+          },
+        },
+        retina_detect: true,
       }}
       init={init}
     />
