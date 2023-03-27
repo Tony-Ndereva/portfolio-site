@@ -12,6 +12,7 @@
   --bg_ResponsiveNavBar: rgb(24, 26, 39);
   --primaryBorderColor: rgba(200, 137, 230, 0.637);
   --ProjectCardBoxShadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  --ProjectCardBoxShadowOnHover: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
   /* CSS rule above defines the color of the whole body */
 }
 .app {
@@ -35,6 +36,7 @@
   --bg_ResponsiveNavBar: var(--bg_OnScroll);
   --primaryBorderColor: #333;
   --ProjectCardBoxShadow: none;
+  --ProjectCardBoxShadowOnHover: 0 4px 4px 5px #e3dddc;
 }
 * {
   color: var(--primary_color);
@@ -389,7 +391,7 @@ p {
 .project-card:hover {
   transform: scale(1.02);
   overflow: hidden;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+  box-shadow: var(--ProjectCardBoxShadowOnHover);
 }
 
 .project-title {
