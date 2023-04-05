@@ -1,7 +1,7 @@
 import GAEventsTracker from "./GAEventsTracker";
 
 const externalData = {
-  Github: "https://github.com/G-69westside",
+  Github: "https://github.com/Tony-Ndereva/",
   LinkedIn: "https://www.linkedin.com/in/tony-maluki-9b9611173/",
   Instagram: "https://www.instagram.com/life.astony/",
   Twitter: "https://twitter.com/asap_toni",
