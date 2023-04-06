@@ -190,9 +190,9 @@
   position: sticky;
   top: 0;
   z-index: 2222;
-  -webkit-transition: background-color 650ms linear;
+/*   -webkit-transition: background-color 650ms linear;
   -ms-transition: background-color 650ms linear;
-  transition: background-color 650ms linear;
+  transition: background-color 650ms linear; */
 }
 .nav-container {
   display: flex;
