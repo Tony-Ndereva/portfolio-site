@@ -271,7 +271,7 @@ a:visited {
   color: var(--special_color);
 }
 .name {
-  color: purple;
+  color: #b061de;
 }
 .row {
   display: flex;
