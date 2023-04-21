@@ -383,7 +383,7 @@ p {
   width: 30%;
   text-align: center;
   padding: 2rem;
-  border-radius: 1.2rem;
+  border-radius: 0.25rem;
   border: 1px solid #aaa8ad;
   box-shadow: var(--ProjectCardBoxShadow);
   margin: 1.1rem;
