@@ -56,7 +56,7 @@ export default [
       projectImage: barbershop,
       projectDescription:
         "This is an online booking system whereby enables clients see, book and pay for haircuts, spa work, and other beauty services.",
-      projectLink: "https://github.com/G-69westside/FinalYrProject",
+      projectLink: "https://tony-personal-project.000webhostapp.com/FinalYearProject/",
     },
   },
   {
