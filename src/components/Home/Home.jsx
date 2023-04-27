@@ -15,7 +15,7 @@ const Home = (props) => {
           <div className="left">
             <h2 className="heading">
               Hello There!
-              <span className="wave">👋</span>
+              <span className="wave">👋🏿</span>
             </h2>
             <h2 className="heading-name">
               I am <span className="name">{props.name}</span>
