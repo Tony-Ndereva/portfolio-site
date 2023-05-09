@@ -10,8 +10,9 @@ import {
   DiPython,
   DiWindows,
   DiLinux,
+  DiDjango,
 } from "react-icons/di";
-import { SiMysql,SiTypescript,SiPhp,SiExpress } from "react-icons/si";
+import { SiMysql,SiTypescript,SiPhp,SiExpress, SiLaravel } from "react-icons/si";
 import { FaGit, FaDocker } from "react-icons/fa";
 
 const Skills = () => {
@@ -64,12 +65,36 @@ const Skills = () => {
             <p>JavaScript</p>
           </div>
           <div className="tech-icon">
-            <DiNodejs className="react-icons" />
-            <p>Node JS</p>
+            <SiTypescript className="react-icons" />
+            <p>TypeScript</p>
           </div>
           <div className="tech-icon">
             <DiReact className="react-icons" />
             <p>React</p>
+          </div>
+          <div className="tech-icon">
+            <DiNodejs className="react-icons" />
+            <p>Node JS</p>
+          </div>
+          <div className="tech-icon">
+            <SiExpress className="react-icons" />
+            <p>Express</p>
+          </div>
+          <div className="tech-icon">
+            <DiPython className="react-icons" />
+            <p>Python</p>
+          </div>
+          <div className="tech-icon">
+            <DiDjango className="react-icons" />
+            <p>Django</p>
+          </div>
+          <div className="tech-icon">
+            <SiPhp className="react-icons" />
+            <p>PHP</p>
+          </div>
+          <div className="tech-icon">
+            <SiLaravel className="react-icons" />
+            <p>Laravel</p>
           </div>
           <div className="tech-icon">
             <DiMongodb className="react-icons" />
@@ -79,10 +104,7 @@ const Skills = () => {
             <SiMysql className="react-icons" />
             <p>MySQL</p>
           </div>
-          <div className="tech-icon">
-            <DiPython className="react-icons" />
-            <p>Python</p>
-          </div>
+
           <div className="tech-icon">
             <DiWindows className="react-icons" />
             <p> Windows</p>
@@ -95,21 +117,10 @@ const Skills = () => {
             <FaGit className="react-icons" />
             <p>Git</p>
           </div>
-          <div className="tech-icon">
-            <SiTypescript className="react-icons" />
-            <p>TypeScript</p>
-          </div>
-          <div className="tech-icon">
-            <SiPhp className="react-icons" />
-            <p>PHP</p>
-          </div>
+
           <div className="tech-icon">
             <FaDocker className="react-icons" />
             <p>Docker</p>
-          </div>
-          <div className="tech-icon">
-            <SiExpress className="react-icons" />
-            <p>Express</p>
           </div>
         </div>
       </div>
