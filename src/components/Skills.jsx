@@ -11,8 +11,8 @@ import {
   DiWindows,
   DiLinux,
 } from "react-icons/di";
-import { SiMysql } from "react-icons/si";
-import { FaGit } from "react-icons/fa";
+import { SiMysql,SiTypescript,SiPhp,SiExpress } from "react-icons/si";
+import { FaGit, FaDocker } from "react-icons/fa";
 
 const Skills = () => {
   const View = () => {
@@ -94,6 +94,22 @@ const Skills = () => {
           <div className="tech-icon">
             <FaGit className="react-icons" />
             <p>Git</p>
+          </div>
+          <div className="tech-icon">
+            <SiTypescript className="react-icons" />
+            <p>TypeScript</p>
+          </div>
+          <div className="tech-icon">
+            <SiPhp className="react-icons" />
+            <p>PHP</p>
+          </div>
+          <div className="tech-icon">
+            <FaDocker className="react-icons" />
+            <p>Docker</p>
+          </div>
+          <div className="tech-icon">
+            <SiExpress className="react-icons" />
+            <p>Express</p>
           </div>
         </div>
       </div>
