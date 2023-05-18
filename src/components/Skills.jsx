@@ -1,6 +1,9 @@
 import Lottie from "lottie-react";
 import skills from "../assets/skills.json";
 import {
+  DiJoomla,
+  DiDrupal,
+  DiWordpress,
   DiHtml5,
   DiNodejs,
   DiCss3,
@@ -121,6 +124,18 @@ const Skills = () => {
           <div className="tech-icon">
             <FaDocker className="react-icons" />
             <p>Docker</p>
+          </div>
+          <div className="tech-icon">
+            <DiWordpress className="react-icons" />
+            <p>Wordpress</p>
+          </div>
+          <div className="tech-icon">
+            <DiDrupal className="react-icons" />
+            <p>Drupal</p>
+          </div>
+          <div className="tech-icon">
+            <DiJoomla className="react-icons" />
+            <p>Joomla</p>
           </div>
         </div>
       </div>
