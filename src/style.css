@@ -397,6 +397,7 @@ p {
 
 .project-title {
   padding: 1rem;
+  text-transform: uppercase;
 }
 .project-image {
   width: 100%;
