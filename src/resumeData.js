@@ -10,7 +10,7 @@ export default [
   {
     projects: {
       id: nanoid(),
-      projectName: "ICT Authority",
+      projectName: "ICT Authority KENYA",
       projectImage: icta,
       projectDescription:
         "The Information and Communication Technology (ICT) Authority is a State Corporation under the Ministry of Information Communication and Technology in Kenya. I was part of a 2-men team which designed, developed and implemented the new official website from client to the server side features of the system.",
@@ -32,7 +32,7 @@ export default [
   {
     projects: {
       id: nanoid(),
-      projectName: "KASNEB ONLINE WEB PORTAL",
+      projectName: "KASNEB WEB STUDENTS & STAFF PORTAL",
       projectImage: kasneb,
       projectDescription:
         "This is an online web portal that let students the school's resources such as grades, and school fees invoices. I was mandated in the quality assurance and analysis for this system.",
