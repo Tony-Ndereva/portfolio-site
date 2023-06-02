@@ -54,7 +54,7 @@ const Navbar = () => {
 
   const resumeLink = {
     resume:
-      "https://drive.google.com/file/d/1LZO-oYqnmiIVAIICdmeKa5wASq9QLq2F/view?usp=sharing",
+      "https://drive.google.com/file/d/1pbykQafjYJ82-iaK4XJ6pCxLGKYicR4G/view?usp=sharing",
   };
   const { resume } = resumeLink;
   return (
