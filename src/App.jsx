@@ -21,11 +21,16 @@ const App = () => {
     ReactGA.pageview(location.pathname + location.search);
   }, [location]);
 
-  const [projectsData, setProjectsData] = useState(resumeData);
-  const [userData, setUserData] = useState(Tonydetails);
+  const [projectsData, setProjectsData] = useState([]);
+  const [userData, setUserData] = useState([]);
   const projects = projectsData.map((each) => {
     return <Projects {...each.projects} key={each.projects.id} />;
   });
+  useEffect(() => {
+    setProjectsData(resumeData);
+    setUserData(Tonydetails);
+  }, []);
+
   const footer = userData.map((each) => {
     return <Footer {...each.details} key={each.details.id} />;
   });
