@@ -9,16 +9,23 @@ import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/ThemeChanger";
-import ReactGA from "react-ga";
+import ReactGA4 from "react-ga4";
 
-const TRACKING_ID = "UA-257499540-3";
 
-ReactGA.initialize(TRACKING_ID);
+
+
+const TRACKING_ID = import.meta.env.VITE_REACT_APP_GA4_TRACKING_ID;
+
+ReactGA4.initialize(TRACKING_ID);
 
 const App = () => {
   const location = useLocation();
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    ReactGA4.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+      title: location.search,
+    });
   }, [location]);
 
   const [projectsData, setProjectsData] = useState([]);
