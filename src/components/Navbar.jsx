@@ -1,6 +1,5 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
-import Switch from "react-switch";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "./ThemeChanger";
 import GAEventsTracker from "./GAEventsTracker";
@@ -101,14 +100,6 @@ const Navbar = () => {
           onClick={(e) => EventsTracker("LightMode Toggle", "Theme switch")}
           
         >
-          {/* <Switch
-            onChange={switchTheme}
-            checked={theme === "light"}
-            checkedIcon={false}
-            uncheckedIcon={false}
-            onColor={"#A020F0"}
-          /> */}
-
           <div>
             <input
               type="checkbox"
