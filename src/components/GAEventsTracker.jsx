@@ -1,4 +1,4 @@
-import ReactGA4 from "react-ga";
+import ReactGA4 from "react-ga4";
 
 const GAEventsTracker = (category = "Event category") => {
   const trackEvent = (action = "action", label = "label") => {
