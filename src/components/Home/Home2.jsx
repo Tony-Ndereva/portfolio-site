@@ -1,4 +1,3 @@
-// import avatar from "../../assets/avatar.jpg";
 import avatar from "../../assets/avatar.svg";
 
 const Home2 = () => {
