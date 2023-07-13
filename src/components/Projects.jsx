@@ -1,11 +1,17 @@
 import GAEventsTracker from "./GAEventsTracker";
-import { Button } from "@mui/material";
-import {createTheme} from "@mui/material";
+import { Button, createTheme,makeStyles } from "@mui/material";
+import {makeStyles} from "@material-ui"
 
-const theme = createTheme({
-  
-})
+const useStyles = makeStyles((theme) => ({
+  button: {
+    padding: theme.spacing(2), // Add padding
+    backgroundColor: "red", // Change background color
+    color: "white", // Change text color
+  },
+}));
+
 const Projects = (props) => {
+  const classes= useStyles();
   const EventsTracker = GAEventsTracker("External Project Links");
   return (
     <>
@@ -28,6 +34,7 @@ const Projects = (props) => {
           onClick={() => EventsTracker(props.projectName, props.projectLink)}
           target="_blank"
           rel="noopener noreferrer"
+          className={classes.button}
         >View project</Button>
       </div>
     </>
