@@ -284,12 +284,12 @@ a:visited {
 .contacts-icons i {
   padding: 1.4rem;
   font-size: 1.5rem;
-  transition: 1000ms;
+  transition: 500ms;
 }
-/*.contacts-icons i:hover {
-  transform: rotateZ(360deg) scale(1.5);
-  transition: 1000ms;
-}*/
+.contacts-icons i:hover {
+  transform: scale(1.5);
+  transition: 500ms;
+}
 
 .footer {
   background-color: var(--bg_SecondaryColor);
