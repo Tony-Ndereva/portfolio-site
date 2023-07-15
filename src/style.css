@@ -286,10 +286,10 @@ a:visited {
   font-size: 1.5rem;
   transition: 1000ms;
 }
-.contacts-icons i:hover {
+/*.contacts-icons i:hover {
   transform: rotateZ(360deg) scale(1.5);
   transition: 1000ms;
-}
+}*/
 
 .footer {
   background-color: var(--bg_SecondaryColor);
