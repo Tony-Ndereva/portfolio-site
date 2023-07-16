@@ -1,5 +1,7 @@
 import Lottie from "lottie-react";
 import skills from "../assets/skills.json";
+import { useState } from "react";
+import { FaGit, FaDocker } from "react-icons/fa";
 import {
   DiJoomla,
   DiDrupal,
@@ -15,13 +17,36 @@ import {
   DiLinux,
   DiDjango,
 } from "react-icons/di";
-import { SiMysql,SiTypescript,SiPhp,SiExpress, SiLaravel } from "react-icons/si";
-import { FaGit, FaDocker } from "react-icons/fa";
+import { SiMysql, SiTypescript, SiPhp, SiExpress, SiLaravel } from "react-icons/si";
 
 const Skills = () => {
+  const [icons] = useState([
+    { icon: DiHtml5, label: "HTML 5" },
+    { icon: DiCss3, label: "CSS 3" },
+    { icon: DiJavascript1, label: "JavaScript" },
+    { icon: SiTypescript, label: "TypeScript" },
+    { icon: DiReact, label: "React" },
+    { icon: DiNodejs, label: "Node JS" },
+    { icon: SiExpress, label: "Express" },
+    { icon: DiPython, label: "Python" },
+    { icon: DiDjango, label: "Django" },
+    { icon: SiPhp, label: "PHP" },
+    { icon: SiLaravel, label: "Laravel" },
+    { icon: DiMongodb, label: "Mongo DB" },
+    { icon: SiMysql, label: "MySQL" },
+    { icon: DiWindows, label: "Windows" },
+    { icon: DiLinux, label: "Linux" },
+    { icon: FaGit, label: "Git" },
+    { icon: FaDocker, label: "Docker" },
+    { icon: DiWordpress, label: "Wordpress" },
+    { icon: DiDrupal, label: "Drupal" },
+    { icon: DiJoomla, label: "Joomla" },
+  ]);
+
   const View = () => {
     return <Lottie animationData={skills} />;
   };
+
   return (
     <section className="skill-wrapper">
       <div className="upper-container">
@@ -55,88 +80,12 @@ const Skills = () => {
         </h1>
 
         <div className="icons-container">
-          <div className="tech-icon">
-            <DiHtml5 className="react-icons" />
-            <p>HTML 5</p>
-          </div>
-          <div className="tech-icon">
-            <DiCss3 className="react-icons" />
-            <p>css 3</p>
-          </div>
-          <div className="tech-icon">
-            <DiJavascript1 className="react-icons" />
-            <p>JavaScript</p>
-          </div>
-          <div className="tech-icon">
-            <SiTypescript className="react-icons" />
-            <p>TypeScript</p>
-          </div>
-          <div className="tech-icon">
-            <DiReact className="react-icons" />
-            <p>React</p>
-          </div>
-          <div className="tech-icon">
-            <DiNodejs className="react-icons" />
-            <p>Node JS</p>
-          </div>
-          <div className="tech-icon">
-            <SiExpress className="react-icons" />
-            <p>Express</p>
-          </div>
-          <div className="tech-icon">
-            <DiPython className="react-icons" />
-            <p>Python</p>
-          </div>
-          <div className="tech-icon">
-            <DiDjango className="react-icons" />
-            <p>Django</p>
-          </div>
-          <div className="tech-icon">
-            <SiPhp className="react-icons" />
-            <p>PHP</p>
-          </div>
-          <div className="tech-icon">
-            <SiLaravel className="react-icons" />
-            <p>Laravel</p>
-          </div>
-          <div className="tech-icon">
-            <DiMongodb className="react-icons" />
-            <p>Mongo DB</p>
-          </div>
-          <div className="tech-icon">
-            <SiMysql className="react-icons" />
-            <p>MySQL</p>
-          </div>
-
-          <div className="tech-icon">
-            <DiWindows className="react-icons" />
-            <p> Windows</p>
-          </div>
-          <div className="tech-icon">
-            <DiLinux className="react-icons" />
-            <p>Linux</p>
-          </div>
-          <div className="tech-icon">
-            <FaGit className="react-icons" />
-            <p>Git</p>
-          </div>
-
-          <div className="tech-icon">
-            <FaDocker className="react-icons" />
-            <p>Docker</p>
-          </div>
-          <div className="tech-icon">
-            <DiWordpress className="react-icons" />
-            <p>Wordpress</p>
-          </div>
-          <div className="tech-icon">
-            <DiDrupal className="react-icons" />
-            <p>Drupal</p>
-          </div>
-          <div className="tech-icon">
-            <DiJoomla className="react-icons" />
-            <p>Joomla</p>
-          </div>
+          {icons.map((item, index) => (
+            <div className="tech-icon" key={index}>
+              <item.icon className="react-icons" />
+              <p>{item.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
