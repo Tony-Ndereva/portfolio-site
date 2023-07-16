@@ -1,4 +1,3 @@
-import { nanoid } from "nanoid";
 import icta from "./assets/pictures/ictalogo.jpg";
 import connected from "./assets/pictures/connected2023.png";
 import kasneb from "./assets/pictures/kasneb.png";
@@ -9,7 +8,6 @@ import tenzies from "./assets/pictures/tenzies.png";
 export default [
   {
     projects: {
-      id: nanoid(),
       projectName: "ict authority kenya",
       projectImage: icta,
       projectDescription:
@@ -20,7 +18,6 @@ export default [
 
   {
     projects: {
-      id: nanoid(),
       projectName: "connected kenya",
       projectImage: connected,
       projectDescription:
@@ -31,7 +28,6 @@ export default [
 
   {
     projects: {
-      id: nanoid(),
       projectName: "kasneb web students & staff portal",
       projectImage: kasneb,
       projectDescription:
@@ -41,7 +37,6 @@ export default [
   },
   {
     projects: {
-      id: nanoid(),
       projectName: "ybk Ltd",
       projectImage: ybk,
       projectDescription:
@@ -51,17 +46,16 @@ export default [
   },
   {
     projects: {
-      id: nanoid(),
       projectName: "barbershop booking system",
       projectImage: barbershop,
       projectDescription:
         "This is an online booking system whereby enables clients see, book and pay for haircuts, spa work, and other beauty services.",
-      projectLink: "https://tony-personal-project.000webhostapp.com/FinalYearProject/",
+      projectLink:
+        "https://tony-personal-project.000webhostapp.com/FinalYearProject/",
     },
   },
   {
     projects: {
-      id: nanoid(),
       projectName: "Tenzies Game",
       projectImage: tenzies,
       projectDescription:
