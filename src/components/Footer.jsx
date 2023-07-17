@@ -1,8 +1,5 @@
 import Socials from "./Socials";
 const Footer = (props) => {
-  function getYear() {
-    return new Date().getFullYear();
-  }
   return (
     <div className="footer">
       <div className="row">
@@ -13,7 +10,7 @@ const Footer = (props) => {
           </h4>
         </div>
         <div className="footer-copyright">
-          <h4>Copyright &copy; {getYear()} </h4>
+          <h4>Copyright &copy; {new Date().getFullYear()} </h4>
         </div>
         <div className="footer-socials">
           <Socials />

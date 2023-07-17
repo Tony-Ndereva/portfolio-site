@@ -18,10 +18,10 @@ const Navbar = () => {
     setTheme(newTheme);
   };
 
-  function handleToggle() {
+  function handleToggleClick() {
     setToggle(!toggle);
   }
-  function handleNavbar() {
+  function handleNavbarStyle() {
     if (toggle === false) {
       return "none";
     } else {
@@ -56,35 +56,39 @@ const Navbar = () => {
       "https://drive.google.com/file/d/1pbykQafjYJ82-iaK4XJ6pCxLGKYicR4G/view?usp=sharing",
   };
   const { resume } = resumeLink;
+
+
+
+  
   return (
     <section className={`navbar ${navBarScrolled ? "scrolled" : ""} `}>
       <div className={`nav-container ${!toggle ? "flat" : ""}`}>
         <div className="nav-item">
           {!toggle ? (
-            <FaBars onClick={handleToggle} className="nav-toggler" />
+            <FaBars onClick={handleToggleClick} className="nav-toggler" />
           ) : (
-            <FaTimes onClick={handleToggle} className="nav-toggler" />
+            <FaTimes onClick={handleToggleClick} className="nav-toggler" />
           )}
         </div>
-        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
+        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
           <Link to="/" className="Nav-link">
             <i className="fa-solid fa-house"></i>
             Home
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
+        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
           <Link to="/Skills" className="Nav-link">
             <i className="fa-solid fa-screwdriver-wrench"></i>
             Skills
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
+        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
           <Link to="/Projects" className="Nav-link">
             <i className="fa-solid fa-bars-progress"></i>
             Projects
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbar()}`} onClick={handleNavClick}>
+        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
           <a
             href={resume}
             onClick={(e) => EventsTracker("Resume Page visit", resume)}

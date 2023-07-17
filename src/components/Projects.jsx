@@ -1,16 +1,21 @@
 import GAEventsTracker from "./GAEventsTracker";
-const Projects = (props) => {
+const Projects = ({
+  projectImage,
+  projectName,
+  projectDescription,
+  projectLink,
+}) => {
   const EventsTracker = GAEventsTracker("External Project Links");
   return (
     <>
       <div className="project-card">
-        <img src={props.projectImage} className="project-image" alt="" />
-        <h3 className="project-title">{props.projectName}</h3>
-        <p className="project-description">{props.projectDescription}</p>
+        <img src={projectImage} className="project-image" alt="" />
+        <h3 className="project-title">{projectName}</h3>
+        <p className="project-description">{projectDescription}</p>
         <a
           className="project-link"
-          href={props.projectLink}
-          onClick={() => EventsTracker(props.projectName, props.projectLink)}
+          href={projectLink}
+          onClick={() => EventsTracker(projectName, projectLink)}
           target="_blank"
           rel="noopener noreferrer"
         >
