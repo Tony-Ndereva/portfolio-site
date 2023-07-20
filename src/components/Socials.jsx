@@ -15,13 +15,13 @@ const Socials = () => {
       <a
         href={Github}
         target="_blank"
-        onClick={(e) => EventsTracker("GitHub page visit", Github)}
+        onClick={() => EventsTracker("GitHub page visit", Github)}
       >
         <i className="fa-brands fa-github"></i>
       </a>
       <a
         href={LinkedIn}
-        onClick={(e) => EventsTracker("LinkedIn page visit", LinkedIn)}
+        onClick={() => EventsTracker("LinkedIn page visit", LinkedIn)}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -29,7 +29,7 @@ const Socials = () => {
       </a>
       <a
         href={Instagram}
-        onClick={(e) => EventsTracker("Instagram page visit", Instagram)}
+        onClick={() => EventsTracker("Instagram page visit", Instagram)}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -37,13 +37,13 @@ const Socials = () => {
       </a>
       <a
         href={Twitter}
-        onClick={(e) => EventsTracker("Twitter page visit", Twitter)}
+        onClick={() => EventsTracker("Twitter page visit", Twitter)}
         target="_blank"
         rel="noopener noreferrer"
       >
         <i className="fa-brands fa-twitter"></i>
       </a>
-      <a href={Email} onClick={(e) => EventsTracker("Email page visit", Email)}>
+      <a href={Email} onClick={() => EventsTracker("Email page visit", Email)}>
         <i className="fa-solid fa-envelope"></i>
       </a>
     </div>
