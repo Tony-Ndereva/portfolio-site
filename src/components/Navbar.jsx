@@ -22,33 +22,21 @@ const Navbar = () => {
     setToggle(!toggle);
   }
   function handleNavbarStyle() {
-    if (toggle === false) {
-      return "none";
-    } else {
-      return "";
-    }
-  }
-  function automaticNavClose() {
-    setToggle(false);
+    return !toggle ? "none" : "";
   }
 
   function handleNavClick() {
-    automaticNavClose();
+    setToggle(false);
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }
-  function changeBackground() {
-    if (window.scrollY >= 66) {
-      setNavBarScrolled(true);
-    } else {
-      setNavBarScrolled(false);
-    }
-  }
 
   useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
+    window.addEventListener("scroll", () =>
+      window.scrollY >= 66 ? setNavBarScrolled(true) : setNavBarScrolled(false)
+    );
   }, []);
 
   const resumeLink = {
@@ -57,9 +45,6 @@ const Navbar = () => {
   };
   const { resume } = resumeLink;
 
-
-
-  
   return (
     <section className={`navbar ${navBarScrolled ? "scrolled" : ""} `}>
       <div className={`nav-container ${!toggle ? "flat" : ""}`}>
@@ -70,25 +55,37 @@ const Navbar = () => {
             <FaTimes onClick={handleToggleClick} className="nav-toggler" />
           )}
         </div>
-        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
+        <div
+          className={`nav-item ${handleNavbarStyle()}`}
+          onClick={handleNavClick}
+        >
           <Link to="/" className="Nav-link">
             <i className="fa-solid fa-house"></i>
             Home
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
+        <div
+          className={`nav-item ${handleNavbarStyle()}`}
+          onClick={handleNavClick}
+        >
           <Link to="/Skills" className="Nav-link">
             <i className="fa-solid fa-screwdriver-wrench"></i>
             Skills
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
+        <div
+          className={`nav-item ${handleNavbarStyle()}`}
+          onClick={handleNavClick}
+        >
           <Link to="/Projects" className="Nav-link">
             <i className="fa-solid fa-bars-progress"></i>
             Projects
           </Link>
         </div>
-        <div className={`nav-item ${handleNavbarStyle()}`} onClick={handleNavClick}>
+        <div
+          className={`nav-item ${handleNavbarStyle()}`}
+          onClick={handleNavClick}
+        >
           <a
             href={resume}
             onClick={(e) => EventsTracker("Resume Page visit", resume)}
@@ -102,7 +99,6 @@ const Navbar = () => {
         <div
           className={`nav-item ${toggle ? "none" : ""} transparent`}
           onClick={(e) => EventsTracker("LightMode Toggle", "Theme switch")}
-          
         >
           <div>
             <input
