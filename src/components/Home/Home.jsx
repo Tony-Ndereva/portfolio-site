@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 import Home2 from "./Home2";
 import Home3 from "./Home3";
 import TypeWriter from "../Typewriter";
-const Home = (props) => {
+const Home = ({ name }) => {
   const View = () => {
     return <Lottie animationData={coding} />;
   };
@@ -18,7 +18,7 @@ const Home = (props) => {
               <span className="wave">👋🏿</span>
             </h2>
             <h2 className="heading-name">
-              I am <span className="name">{props.name}</span>
+              I am <span className="name">{name}</span>
             </h2>
 
             <TypeWriter />
