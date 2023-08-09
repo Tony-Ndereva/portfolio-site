@@ -109,7 +109,7 @@ const Navbar = () => {
               checked={theme === "light"}
               style={{ cursor: "pointer" }}
             />
-            <label for="checkbox" className="label">
+            <label htmlFor="checkbox" className="label">
               <i className="fas fa-moon" style={{ color: "pink" }}></i>
               <i
                 className="fas fa-sun"

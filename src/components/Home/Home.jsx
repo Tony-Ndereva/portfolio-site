@@ -5,9 +5,6 @@ import Home2 from "./Home2";
 import Home3 from "./Home3";
 import TypeWriter from "../Typewriter";
 const Home = ({ name }) => {
-  const View = () => {
-    return <Lottie animationData={coding} />;
-  };
   return (
     <>
       <section className="home">
@@ -20,15 +17,13 @@ const Home = ({ name }) => {
             <h2 className="heading-name">
               I am <span className="name">{name}</span>
             </h2>
-
             <TypeWriter />
           </div>
           <div className="right">
-            <View />
+            <Lottie animationData={coding} />
           </div>
         </div>
       </section>
-
       <Home2 />
       <Home3 />
     </>
