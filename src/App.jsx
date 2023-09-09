@@ -11,6 +11,7 @@ import Particle from "./components/Particle";
 import Tonydetails from "./Tonydetails";
 import resumeData from "./resumeData";
 import { ThemeContext } from "./components/ThemeChanger";
+import { useSelector } from "react-redux";
 
 const TRACKING_ID = import.meta.env.VITE_REACT_APP_GA4_TRACKING_ID;
 
@@ -42,11 +43,11 @@ const App = () => {
   const home = userData.map((user, index) => {
     return <Home {...user.details} key={index + 1} />;
   });
-
-  const { theme, setTheme } = useContext(ThemeContext);
+  const theme = useSelector((state) => state.theme);
+  // const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <div data-theme={theme} className="app">
+    <div className="app"data-theme={theme}>
       <Particle />
       <Navbar />
       <Routes>

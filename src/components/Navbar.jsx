@@ -1,9 +1,10 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ThemeContext } from "./ThemeChanger";
+//import { ThemeContext } from "./ThemeChanger";
 import GAEventsTracker from "./GAEventsTracker";
-
+import { useSelector, useDispatch } from "react-redux";
+import { toggleTheme } from "../features/themeSlice";
 const Navbar = () => {
   const EventsTracker = GAEventsTracker("Navbar events");
   const [navBarScrolled, setNavBarScrolled] = useState(false);
@@ -11,11 +12,15 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   // This state above defines the state at which the opening and closing of the navbar on responsive devices operates
 
-  const { theme, setTheme } = useContext(ThemeContext);
+  //const { theme, setTheme } = useContext(ThemeContext);
+  
+  const theme = useSelector((state) => state.theme);
+  const dispatch = useDispatch();
+  
   const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
+    dispatch(toggleTheme());
 
-    setTheme(newTheme);
+    // setTheme(newTheme);
   };
 
   function handleToggleClick() {
