@@ -1,5 +1,5 @@
 // import avatar from "../../assets/avatar.jpg";
-import avatar from "../../assets/avatar.svg";
+import avatar from "../../assets/avatar.jpg";
 
 const Home2 = () => {
   return (
