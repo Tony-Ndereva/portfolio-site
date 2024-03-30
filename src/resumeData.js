@@ -4,8 +4,19 @@ import kasneb from "./assets/pictures/kasneb.png";
 import ybk from "./assets/pictures/ybk.jpeg";
 import barbershop from "./assets/pictures/barbershop.png";
 import tenzies from "./assets/pictures/tenzies.png";
+import eAuthority from "./assets/pictures/eAuthorityLogo.png";
 
 export default [
+  {
+    projects: {
+      projectName:
+        "eAuthority : Safety Oversight Software for Regulatory Compliance ",
+      projectImage: eAuthority,
+      projectDescription:
+        "This is a Safety Oversight Software for Regulatory Compliance Management and Administration System for Aviation Authorities. This system allows Aviation Authorities to process customer Applications such as Pilot Licenses, Flight Crew Licenses, Airworthiness Inspections, Medical and student Licenses among others. This system servers over 100 Aviation Authorities which in turn gets to serve over 10 million customers worldwide per month",
+      projectLink: "https://www.seaburysolutions.com/products/eauthority/",
+    },
+  },
   {
     projects: {
       projectName: "ict authority kenya",
