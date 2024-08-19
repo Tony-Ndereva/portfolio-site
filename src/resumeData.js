@@ -52,7 +52,7 @@ export default [
       projectImage: ybk,
       projectDescription:
         "YBK is a premium Gift Shop that deals with designing personalized Gifts ,Branding and printing co-operatw merchandise. I developed the main catalogue site that showcases different services offered and their prices. ",
-      projectLink: "http://tony-personal-project.000webhostapp.com/ybk/",
+      projectLink: "https://ybk.maluki.tech",
     },
   },
   {
@@ -61,8 +61,7 @@ export default [
       projectImage: barbershop,
       projectDescription:
         "This is an online booking system whereby enables clients see, book and pay for haircuts, spa work, and other beauty services.",
-      projectLink:
-        "https://tony-personal-project.000webhostapp.com/FinalYearProject/",
+      projectLink: "https://barbershop.maluki.tech",
     },
   },
   {
