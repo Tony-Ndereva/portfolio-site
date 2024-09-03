@@ -13,10 +13,10 @@ const Navbar = () => {
   // This state above defines the state at which the opening and closing of the navbar on responsive devices operates
 
   //const { theme, setTheme } = useContext(ThemeContext);
-  
+
   const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();
-  
+
   const switchTheme = () => {
     dispatch(toggleTheme());
 
@@ -46,7 +46,7 @@ const Navbar = () => {
 
   const resumeLink = {
     resume:
-      "https://drive.google.com/file/d/1FKBP1QG1mS-pFlbah5q5L1WaZJkc_IT0/view?usp=sharing",
+      "https://drive.google.com/file/d/1u9eXvM6PuZtG5-TfwviE9Vw63JlXYaD8/view?usp=drive_link",
   };
   const { resume } = resumeLink;
 
