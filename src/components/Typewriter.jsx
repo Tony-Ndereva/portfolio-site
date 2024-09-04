@@ -7,6 +7,7 @@ const TypeWriter = () => {
           strings: [
             "Web Developer",
             "IT Consultant",
+            "Scrum Master",
             "Project Manager",
             "Learner",
           ],
