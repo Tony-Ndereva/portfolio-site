@@ -10,9 +10,9 @@ const Home2 = () => {
         </h2>
       </div>
       <span className="description">
-        Hello! My name is Tony and I am a Software Engineer based in Nairobi,
-        KENYA and I enjoy creating things that live on the internet. I am able
-        to provide{" "}
+        Hello! My name is Tony and I am a Software Engineer based in Jersey, UK
+        and I enjoy creating things that live on the internet. I am able to
+        provide{" "}
         <span className="orange">
           business solutions ranging from designing and developing interactive
           ultra-modern, responsive and content rich websites
