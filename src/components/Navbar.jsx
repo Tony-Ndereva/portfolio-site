@@ -98,7 +98,7 @@ const Navbar = () => {
             target="_blank"
           >
             <i className="fa-regular fa-file"></i>
-            Resume
+            CV
           </a>
         </div>
         <div
