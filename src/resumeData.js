@@ -64,13 +64,13 @@ export default [
       projectLink: "https://barbershop.maluki.tech",
     },
   },
-  {
-    projects: {
-      projectName: "Tenzies Game",
-      projectImage: tenzies,
-      projectDescription:
-        "Feeling bored? Try out my tenzies game built on react. Enjoy :)",
-      projectLink: "https://playtenziies.netlify.app",
-    },
-  },
+  // {
+  //   projects: {
+  //     projectName: "Tenzies Game",
+  //     projectImage: tenzies,
+  //     projectDescription:
+  //       "Feeling bored? Try out my tenzies game built on react. Enjoy :)",
+  //     projectLink: "https://playtenziies.netlify.app",
+  //   },
+  // },
 ];
