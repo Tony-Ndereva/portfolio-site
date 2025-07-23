@@ -35,14 +35,14 @@ const Socials = () => {
       >
         <i className="fa-brands fa-instagram"></i>
       </a>
-      <a
+      {/* <a
         href={Twitter}
         onClick={() => EventsTracker("Twitter page visit", Twitter)}
         target="_blank"
         rel="noopener noreferrer"
       >
         <i className="fa-brands fa-twitter"></i>
-      </a>
+      </a> */}
       <a href={Email} onClick={() => EventsTracker("Email page visit", Email)}>
         <i className="fa-solid fa-envelope"></i>
       </a>
