@@ -40,13 +40,13 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () =>
-      window.scrollY >= 66 ? setNavBarScrolled(true) : setNavBarScrolled(false)
+      window.scrollY >= 66 ? setNavBarScrolled(true) : setNavBarScrolled(false),
     );
   }, []);
 
   const resumeLink = {
     resume:
-      "https://drive.google.com/file/d/1322VmP_Y5B7YjOW7dw-BVNvfw8R5u-SM/view?usp=sharing",
+      "https://drive.google.com/file/d/1Y7pvgfDr1N0S2JMePjugZJQNxNOnJmBQ/view?usp=drive_link",
   };
   const { resume } = resumeLink;
 
